@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap);
 
 :root {
-    --ddvh: 1ddvh;
+    --dvh: 1dvh;
     --primary: #ffc90e;
     --secondary: #f0d1b0;
     --terciary: #c3a98e;
@@ -17,7 +17,7 @@
 #slider {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    height: calc(var(--ddvh, 1ddvh) * 100)
+    height: calc(var(--dvh, 1dvh) * 100)
 }
 
 body {
@@ -278,7 +278,7 @@ section#contactos:before {
 
 .location iframe {
     width: 100%;
-    height: 25ddvh;
+    height: 25dvh;
     margin: 0
 }
 
