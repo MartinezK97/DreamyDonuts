@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://github.com/MartinezK97/DreamyDonuts/sitemap.xml

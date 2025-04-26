@@ -139,7 +139,7 @@
     #portada h1 {
         font-size: 3rem !important;
         margin: var(--header-height) auto 0 !important;
-        border: solid 1px fuchsia;
+        /* border: solid 1px fuchsia; */
     }
 
     #portada .cta {
@@ -221,7 +221,7 @@
     #portada h1 {
         font-size: 5rem;
         margin: var(--header-height) auto 0;
-        border: solid 1px red;
+        /* border: solid 1px red; */
     }
 
     #portada .cta {
@@ -303,7 +303,7 @@
         font-size: 4.5rem !important;
         max-width: 750px !important;
         margin: var(--header-height) auto 0 !important;
-        border: solid 1px green;
+        /* border: solid 1px green; */
     }
 
     #portada .cta {
