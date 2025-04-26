@@ -1,4 +1,18 @@
-@import url(https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap); */
+@font-face {
+    font-family: 'Sour Gummy';
+    src: url('../fonts/Sour_Gummy/SourGummy-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    /* Variable font range */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pattaya';
+    src: url('../fonts/Pattaya/Pattaya-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root {
     --dvh: 1dvh;
@@ -54,6 +68,23 @@ h5,
 h6 {
     color: var(--titles-color)
 }
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff2') format('woff2'),
+        url('../fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon="bars"] {
+    font-size: 16px;
+    /* Tamaño de fuente */
+    color: #ffffff;
+    /* Color blanco */
+}
+
 
 .header {
     background: #3119003d;
@@ -186,21 +217,9 @@ h6 {
     transform: translateX(100%)
 }
 
-i.icon {
-    width: 1.1rem;
-    height: 1.1rem;
-    display: inline-block;
-    background-size: cover;
-    background-position: 50%;
-    align-self: center;
-}
 
-.donut {
-    background-image: url(../img/icons/donut.svg);
-}
-
-.color-primary .icon.donut {
-    background-image: url(../img/icons/donut_primary.svg)
+.fz-2 {
+    font-size: 2rem;
 }
 
 .footer {
@@ -307,7 +326,7 @@ section#contactos:before {
 
 .rrss div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     text-align: center;
     grid-gap: 2rem;
