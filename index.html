@@ -59,10 +59,10 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#ffffff">
 
-    <!-- Hojas de Estilo -->
+    <!-- Hojas de Estilo
     <link rel="stylesheet" href="./assets/css/main.min.css" as="style">
     <link rel="stylesheet" href="./assets/css/main.min.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="./assets/css/responsive.css" media="(max-width: 768px)"> -->
 
 
     <link rel="shortcut icon" href="../assets/img/brand/iso.svg" type="image/x-icon" loading="lazy">
@@ -70,7 +70,7 @@
     <link rel="stylesheet" href="./assets/css/main.min.css" as="style">
     <link rel="stylesheet" href="./assets/css/responsive.css" as="style">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 
     <!-- FontAwesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -88,7 +88,7 @@
       "name": "Dreamy Donuts",
       "image": [
         "https://martinezk97.github.io/DreamyDonuts/assets/img/brand/iso.svg",
-        "https://martinezk97.github.io/DreamyDonuts/assets/img/donuts/*.webp"
+        "https://martinezk97.github.io/DreamyDonuts/assets/img/donuts/devil9.webp"
       ],
       "logo": "https://martinezk97.github.io/DreamyDonuts/assets/img/brand/iso.svg",
       "url": "https://martinezk97.github.io/DreamyDonuts/",
@@ -151,31 +151,32 @@
         <div class="scrollH clamp">
             <div class="product"></div>
             <div class="product">
-                <img src="./assets/img/donuts/devil1.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil1.webp" alt="Donas de glaseadas" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil2.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil2.webp" alt="Donas de con chips azucarados" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil3.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil3.webp" alt="Donas glaseadas con chips de chocolate blanco"
+                    loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil4.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil4.webp" alt="Donas de chocolate suizo" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil5.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil5.webp" alt="Donas con salsa de chocolate" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil6.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil6.webp" alt="Donas de chocolate con nuces" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil7.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil7.webp" alt="Donas de chocolate blanco con almendras" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil8.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil8.webp" alt="Donas con Nutella" loading="lazy">
             </div>
             <div class="product">
-                <img src="./assets/img/donuts/devil9.webp" alt="Donas de ..." loading="lazy">
+                <img src="./assets/img/donuts/devil9.webp" alt="Donas de chocolate blanco con Oreos" loading="lazy">
             </div>
             <div class="product"></div>
         </div>
@@ -226,11 +227,12 @@
         </setion>
         <!--! Menu -->
         <div id="menu" class="menu hide">
-            <button class="btn-menu fz-2 maxw-max color-titles"><i class="fa fa-bars"></i></button>
+            <button class="btn-menu fz-2 maxw-max color-titles" title="Abrir menú desplazable"><i
+                    class="fa fa-bars"></i></button>
             <a href="./" title="Ir al inicio" class="color-primary"><i class="fa fa-home"></i> Inicio</a>
-            <a href="./promociones" title="Ir al inicio"><i class="icon donut"></i> Promociones</a>
-            <a href="./nosotros" title="Ir al inicio"><i class="fa fa-users"></i> Nosotros</a>
-            <a href="#contactos" title="Ir al inicio"><i class="fa fa-envelope"></i> Contactos</a>
+            <a href="./promociones" title="Ir al página de promociones"><i class="icon donut"></i> Promociones</a>
+            <a href="./nosotros" title="Conocé quien está detrás"><i class="fa fa-users"></i> Nosotros</a>
+            <a href="#contactos" title="Contactate con nosotros"><i class="fa fa-envelope"></i> Contactos</a>
         </div>
         <!-- ! Descripciones -->
         <div class="scrollV" id="scrollV">
@@ -507,7 +509,7 @@
                 </div>
                 <div class="location">
                     <p><i class="fa fa-location-dot"></i> ¿Donde estamos?</p>
-                    <iframe
+                    <iframe title="Ubicación física de Dreamy Donuts"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2752.002107188388!2d-56.169889861130095!3d-34.888866716513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1743617295634!5m2!1ses-419!2suy&zoom=10"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
@@ -517,19 +519,23 @@
                 <div class="rrss">
                     <p>Seguinos en nuestras redes</p>
                     <div>
-                        <a href="https://www.instagram.com/donasdiablo/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/donasdiablo/" target="_blank" title="Visitanos en Instagram"
+                            rel="noopener noreferrer">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/donasdiablo/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/donasdiablo/" target="_blank" title="Visitanos en Facebook"
+                            rel="noopener noreferrer">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
-                        <a href="https://wa.me/+59898760446/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://wa.me/+59898760446/" target="_blank"
+                            title="Visitanos en nuestro canal de WhatsApp" rel="noopener noreferrer">
                             <i class="fa-brands fa-tiktok"></i>
                         </a>
                     </div>
                 </div>
                 <div class="footer_footer">Copyright 2025. Dreamy Donuts. Al rights reserved. Desarrollado por
-                    <a href="mailto:kevinmartinez08.97@hotmail.com" target="_blank" rel="noopener noreferrer">
+                    <a href="mailto:kevinmartinez08.97@hotmail.com" target="_blank"
+                        title="Contácta al desarrollador de este sitio" rel="noopener noreferrer">
                         Kevin Martínez</a>
                 </div>
             </section>
@@ -537,8 +543,8 @@
     </section>
     <a href="http://wa.me/+59898760446/" class="btn-fixed-wpp" title="Contactanos por WhatsApp" target="_blank"
         rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
-    <script src="./assets/js/default.min.js"></script>
-    <script src="./assets/js/menu.min.js"></script>
+    <script src="./assets/js/default.min.js" defer></script>
+    <script src="./assets/js/menu.min.js" defer></script>
 </body>
 
 </html>
