@@ -133,6 +133,161 @@
       }
     }
     </script>
+    <style>
+        /* Critical CSS para index.html */
+
+        /* Variables principales */
+        :root {
+            --primary: #ffc90e;
+            --titles-color: #5b3813;
+            --header-height: 4rem;
+            --body-background: rgb(255, 251, 237);
+        }
+
+        /* Estilos básicos */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Sour Gummy", sans-serif;
+            background-color: var(--body-background);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #f0d1b0;
+            text-shadow: 0 0 10px #0009;
+            text-align: center;
+            margin: 4rem auto 0;
+        }
+
+        /* Encabezado */
+        .header {
+            background: #3119003d;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px -4px #0007;
+            width: 100vw;
+            height: var(--header-height);
+            display: grid;
+            grid-template-columns: max-content auto;
+            align-content: center;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .header .home img {
+            width: calc(var(--header-height) - 1rem);
+            height: calc(var(--header-height) - 1rem);
+            filter: drop-shadow(0 0 10px #0008);
+        }
+
+        .header nav a {
+            color: #fff;
+            font-size: 1.35rem;
+            text-decoration: none;
+        }
+
+        /* Botón de menú */
+        .btn-menu {
+            font-size: 2rem;
+            color: #fff;
+            background: none;
+            border: none;
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        /* Video de portada */
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .video-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Íconos */
+        [class^="icon-"],
+        [class*=" icon-"] {
+            font-family: 'icomoon' !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            color: inherit;
+            font-size: inherit;
+            vertical-align: middle;
+        }
+
+        /* Botón de WhatsApp fijo */
+        .btn-fixed-wpp {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 4rem;
+            color: green;
+        }
+
+        /* Categorías */
+        .category {
+            position: absolute;
+            background: #f0d1b0;
+            right: 1rem;
+            top: -2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0 5px 5px;
+            box-shadow: -2px 2px 5px #0008;
+            font-size: 0.75rem;
+        }
+
+        /* Precios */
+        .description .price {
+            display: grid;
+            grid-template-columns: min-content auto;
+            align-items: center;
+            font-size: 1.25rem;
+            color: #fff;
+        }
+
+        .description .price i {
+            font-size: 4rem;
+        }
+
+        /* Botones */
+        .btn-primary {
+            display: block;
+            margin-top: 1rem;
+            background: var(--primary);
+            color: var(--titles-color);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            border: solid 1px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -186,7 +341,8 @@
             <!--! Caberera del sitio -->
             <div class="header">
                 <a href="./" title="Ir al inicio" class="home">
-                    <img src="./assets/img/brand/iso.svg" alt="Logo de Dreamy Donuts" loading="lazy">
+                    <img src="./assets/img/brand/iso.svg" width="48" height="48" alt="Logo de Dreamy Donuts"
+                        loading="lazy">
                     <span class="brand-name">Dreamy Donuts</span>
                 </a>
                 <!-- ! Menu vertical -->
