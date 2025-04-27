@@ -3,20 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Description -->
-    <meta name="description" content="Descubre las mejores promociones de Dreamy Donuts. Ofertas irresistibles en donas de chocolate, glaseadas y rellenas, hechas artesanalmente.">
-    <!-- Metakeywords -->
-    <meta name="keywords" content="donas, promociones, chocolate, glaseadas, Dreamy Donuts, ofertas irresistibles, Ofertas de donas en Montevideo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Promociones irresistibles | Dreamy Donuts">
-    <meta name="twitter:description" content="Descubre las mejores promociones de Dreamy Donuts. Ofertas irresistibles en donas de chocolate, glaseadas y especiales.">
-    <meta name="twitter:image" content="https://www.dreamydonuts.com/assets/img/brand/iso.png">
-    <title>Promociones irresistibles | Dreamy Donuts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#ffc90e">
 
-     <!--? Favicons  -->
+    <!-- SEO Essentials -->
+    <title>Dreamy Donuts | Donas Artesanales en Montevideo</title>
+    <meta name="description"
+        content="Descubre las mejores promociones de Dreamy Donuts. Ofertas irresistibles en donas de chocolate, glaseadas y rellenas, hechas artesanalmente.">
+    <!-- Metakeywords -->
+    <meta name="keywords"
+        content="donas, promociones, chocolate, glaseadas, Dreamy Donuts, ofertas irresistibles, Ofertas de donas en Montevideo">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dreamy Donuts | Donas Premium en Uruguay">
+    <meta property="og:description"
+        content="🍩 Descubre las donas más creativas de Montevideo! Hechas con amor y ingredientes de primera calidad. ¡Tu antojo dulce merece lo mejor!">
+    <meta property="og:image" content="https://martinezk97.github.io/DreamyDonuts/assets/img/social/og-image.jpg">
+    <meta property="og:url" content="https://martinezk97.github.io/DreamyDonuts/">
+    <meta property="og:site_name" content="Dreamy Donuts">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dreamy Donuts 🍩 Donas que enamoran en Uruguay">
+    <meta name="twitter:description"
+        content="✅ Donas recién hechas ✅ Ingredientes naturales ✅ Opciones veganas ✅ Envíos en Montevideo">
+    <meta name="twitter:image" content="https://martinezk97.github.io/DreamyDonuts/assets/img/social/twitter-card.jpg">
+
+    <!-- Enlaces -->
+    <link rel="canonical" href="https://martinezk97.github.io/DreamyDonuts/">
+
+    <!--? Favicons  -->
     <!-- Favicon Universal -->
-    <link rel="shortcut icon" href="../assets/img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico" type="image/x-icon">
     <!-- Favicons estándar -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,234 +43,433 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
     <!-- Apple Touch Icon (iOS) -->
-    <link rel="apple-touch-icon" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="../assets/css/default.min.css">
-    <link rel="stylesheet" href="../assets/css/icons.css">
-    <link rel="stylesheet" href="../assets/css/promos.min.css">
+    <!-- Configuración de tema -->
+    <meta name="theme-color" content="#5b3813">
+
+    <!-- Microsoft Tiles (Windows 8/10) -->
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <link rel="preload" href="../assets/css/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/promos.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/default.min.css">
+        <link rel="stylesheet" href="../assets/css/icons.css">
+        <link rel="stylesheet" href="../assets/css/promos.min.css">
+    </noscript>
+
+    <script src="./assets/js/icons.min.js" defer></script>
+
+    <!-- Schema.org Optimizado para Uruguay -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Promociones irresistibles | Dreamy Donuts",
-        "description": "Descubre las mejores promociones de Dreamy Donuts. Ofertas irresistibles en donas de chocolate, glaseadas y especiales.",
-        "url": "https://www.dreamydonuts.com/promociones",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Dreamy Donuts",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.dreamydonuts.com/assets/img/brand/iso.svg",
-                "width": 512,
-                "height": 512
-            }
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Dreamy Donuts",
+      "image": [
+        "https://martinezk97.github.io/DreamyDonuts/assets/img/brand/iso.svg",
+        "https://martinezk97.github.io/DreamyDonuts/assets/img/donuts/devil9.webp"
+      ],
+      "logo": "https://martinezk97.github.io/DreamyDonuts/assets/img/brand/iso.svg",
+      "url": "https://martinezk97.github.io/DreamyDonuts/",
+      "telephone": "+59898760446",
+      "priceRange": "$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hocquart #2107",
+        "addressLocality": "Montevideo Uruguay",
+        "addressRegion": "Montevideo",
+        "postalCode": "13000",
+        "addressCountry": "UY"
+      },
+      "sameAs": [
+        "https://facebook.com/DreamyDonuts",
+        "https://instagram.com/DreamyDonuts",
+        "https://twitter.com/DreamyDonuts"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "07:00",
+          "closes": "20:00"
         },
-        "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
-                {
-                    "@type": "Product",
-                    "name": "Mix Lujuria - 6 donas",
-                    "description": "4 de chocolate, 2 glaseadas",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "500",
-                        "priceCurrency": "UYU",
-                        "availability": "https://schema.org/InStock",
-                        "url": "http://wa.me/+59898760446"
-                    }
-                },
-                {
-                    "@type": "Product",
-                    "name": "Mix Delirio - 9 donas",
-                    "description": "4 glaseadas, 4 bañadas, 1 especial",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "820",
-                        "priceCurrency": "UYU",
-                        "availability": "https://schema.org/InStock",
-                        "url": "http://wa.me/+59898760446"
-                    }
-                },
-                {
-                    "@type": "Product",
-                    "name": "Mix Infierno - 24 donas",
-                    "description": "9 de chocolate, 9 glaseadas, 6 especiales",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "2200",
-                        "priceCurrency": "UYU",
-                        "availability": "https://schema.org/InStock",
-                        "url": "http://wa.me/+59898760446"
-                    }
-                }
-            ]
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "22:00"
         }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.4326077,
+        "longitude": -99.133208
+      },
+      "video": {
+        "@type": "VideoObject",
+        "name": "Nuestras Donas Artesanales",
+        "description": "Video de producción de nuestras donas frescas diarias",
+        "thumbnailUrl": "https://martinezk97.github.io/DreamyDonuts/assets/img/.jpg",
+        "uploadDate": "2023-10-05",
+        "contentUrl": "https://martinezk97.github.io/DreamyDonuts/assets/img/portada.mp4"
+      }
     }
     </script>
+    <style>
+        /* Critical CSS */
+
+        /* Variables principales */
+        :root {
+            --primary: #ffc90e;
+            --titles-color: #5b3813;
+            --header-height: 4rem;
+            --body-background: rgb(255, 251, 237);
+        }
+
+        /* Estilos básicos */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Sour Gummy", sans-serif;
+            background-color: var(--body-background);
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #f0d1b0;
+            text-shadow: 0 0 10px #0009;
+            text-align: center;
+            margin: 4rem auto 0;
+        }
+
+        /* Encabezado */
+        .header {
+            background: #5b3813;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px -4px #0007;
+            width: 100vw;
+            height: var(--header-height);
+            display: grid;
+            grid-template-columns: max-content auto;
+            align-content: center;
+            padding: 1rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .header .home img {
+            width: calc(var(--header-height) - 1rem);
+            height: calc(var(--header-height) - 1rem);
+            filter: drop-shadow(0 0 10px #0008);
+        }
+
+        .header nav a {
+            color: #fff;
+            font-size: 1.35rem;
+            text-decoration: none;
+        }
+
+        /* Botón de menú */
+        .btn-menu {
+            font-size: 2rem;
+            color: #fff;
+            background: none;
+            border: none;
+            position: absolute;
+        }
+
+        /* Video de portada */
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .video-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Íconos */
+        [class^="icon-"],
+        [class*=" icon-"] {
+            font-family: 'icomoon' !important;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            color: inherit;
+            font-size: inherit;
+            vertical-align: middle;
+        }
+
+        /* Botón de WhatsApp fijo */
+        .btn-fixed-wpp {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            font-size: 4rem;
+            color: green;
+        }
+
+        /* Categorías */
+        .category {
+            position: absolute;
+            background: #f0d1b0;
+            right: 1rem;
+            top: -2rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0 5px 5px;
+            box-shadow: -2px 2px 5px #0008;
+            font-size: 0.75rem;
+        }
+
+        /* Precios */
+        .description .price {
+            display: grid;
+            grid-template-columns: min-content auto;
+            align-items: center;
+            font-size: 1.25rem;
+            color: #fff;
+        }
+
+        .description .price i {
+            font-size: 4rem;
+        }
+
+        /* Botones */
+        .btn-primary {
+            display: block;
+            margin-top: 1rem;
+            background: var(--primary);
+            color: var(--titles-color);
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            border: solid 1px;
+            text-align: center;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <body>
-
-        <div id="all-content">
-            <div class="header">
-                <a href="./" class="home" title="Ir al inicio">
-                    <img src="../assets/img/brand/iso.svg" alt="Logo de Dreamy Donuts" title="Dreamy Donuts" width="48" height="48">
-                    <span class="brand-name">Dreamy Donuts</span>
+    <div id="all-content">
+        <!-- ! Header -->
+        <div class="header">
+            <a href="./" class="home" title="Ir al inicio">
+                <img src="../assets/img/brand/iso.svg" alt="Logo de Dreamy Donuts" title="Dreamy Donuts" width="48"
+                    height="48" loading="lazy">
+                <span class="brand-name">Dreamy Donuts</span>
+            </a>
+            <nav class="dg gtc-6 gg-1-5 maxw-min mar-a-0-a-a ac-center ai-center">
+                <a href="../" title="Ir al inicio" class="dg gtc-min-a gg-5">
+                    <i class="icon-home as-center"></i>
+                    <span> Inicio</span>
                 </a>
-                <nav class="dg gtc-6 gg-1-5 maxw-min mar-a-0-a-a ac-center ai-center">
-                    <a href="../" title="Ir al inicio" class="dg gtc-min-a gg-5">
-                        <i class="icon-home as-center"></i>
-                        <span> Inicio</span>
-                    </a>
-                    <a href="./promociones" class="color-primary" title="Ir a la página de promociones"
-                        class="dg gtc-min-a gg-5">
-                        <i class="icon donut"></i>
-                        <span>Promociones</span>
-                    </a>
-                    <a href="./nosotros" title="Ir a sobre mi" class="dg gtc-min-a gg-5 minw-max">
-                        <i class="icon-user as-center"></i>
-                        <span>Nosotros</span>
-                    </a>
-                    <a href="#contactos" title="Ir a contactos" class="dg gtc-min-a gg-5">
-                        <i class="icon-envelope as-center"></i>
-                        <span>Contactos</span>
-                    </a>
-                </nav>
-            </div>
-            <!--! Menu -->
-            <div id="menu" class="menu hide">
-                <button class="btn-menu fz-2 maxw-max"><i class="icon-bars"></i></button>
-                <a href="../" title="Ir al inicio"><i class="icon-home"></i> Inicio</a>
-                <a href="#" class="color-primary" title="Ir al inicio"><i class="icon donut"></i> Promociones</a>
-                <a href="../nosotros" title="Conocé quien está detrás"><i class="icon-users"></i> Nosotros</a>
-                <a href="#contactos" title="Ir al inicio"><i class="icon-envelope"></i> Contactos</a>
-            </div>
-            <div class="bodyBG">
-                <article class="b1"></article>
-                <article class="b2"></article>
-                <article class="b3"></article>
-                <article class="b0"></article>
-            </div>
+                <a href="./promociones" class="color-primary" title="Ir a la página de promociones"
+                    class="dg gtc-min-a gg-5">
+                    <i class="icon-donut_primary"></i>
+                    <span>Promociones</span>
+                </a>
+                <a href="./nosotros" title="Ir a sobre mi" class="dg gtc-min-a gg-5 minw-max">
+                    <i class="icon-users+ as-center"></i>
+                    <span>Nosotros</span>
+                </a>
+                <a href="#contactos" title="Ir a contactos" class="dg gtc-min-a gg-5">
+                    <i class="icon-envelope as-center"></i>
+                    <span>Contactos</span>
+                </a>
+            </nav>
+        </div>
+        <!--! Menu -->
+        <div id="menu" class="menu hide">
+            <button class="btn-menu fz-2 maxw-max"><i class="icon-bars"></i></button>
+            <a href="../" title="Ir al inicio"><i class="icon-home"></i> Inicio</a>
+            <a href="#" class="color-primary" title="Ir al inicio"><i class="icon donut"></i> Promociones</a>
+            <a href="../nosotros" title="Conocé quien está detrás"><i class="icon-users"></i> Nosotros</a>
+            <a href="#contactos" title="Ir al inicio"><i class="icon-envelope"></i> Contactos</a>
+        </div>
+        <div class="bodyBG">
+            <article class="b0"></article>
+            <article class="b1"></article>
+            <article class="b2"></article>
+            <article class="b3"></article>
+            <article class="b0"></article>
 
-            <section id="content">
-                <article class="description">
-                    <h1 class="title">Mix Lujuria - 6 donas</h1>
-                    <article class="types gc2">
-                        <span>4 de chocolate</span>
-                        <span>2 glaseadas</span>
-                    </article>
-                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet est
-                        veritatis
-                        adipisci ducimus delectus, et obcaecati reprehenderit expedita quia hic optio nostrum doloremque
-                        deleniti magnam autem exercitationem perspiciatis corporis!</div>
-                    <div class="gc-2">
-                        <p class="precio">
-                            <i class="icon-certificate"></i>
-                            <span>$500</span>
-                        </p>
-                        <a class="btn-primary" href="http://wa.me/+59898760446" title="Solicitá las tuyas por WhatsApp"
-                            target="_blank" rel="noopener noreferrer"><i class="icon-check"></i> Lo quiero</a>
-                    </div>
-                </article>
-                <article class="description">
-                    <h1 class="title">Mix Delirio - 9 donas</h1>
-                    <article class="types gc3">
-                        <span>4 glaseadas</span>
-                        <span>4 bañadas</span>
-                        <span>1 especial</span>
-                    </article>
-                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet est
-                        veritatis
-                        adipisci ducimus delectus, et obcaecati reprehenderit expedita quia hic optio nostrum doloremque
-                        deleniti magnam autem exercitationem perspiciatis corporis!</div>
-                    <div class="gc-2">
-                        <p class="precio">
-                            <i class="icon-certificate"></i>
-                            <span>$820</span>
-                        </p>
-                        <a class="btn-primary" href="http://wa.me/+59898760446" title="Solicitá las tuyas por WhatsApp"
-                            target="_blank" rel="noopener noreferrer"><i class="icon-check"></i> Lo quiero</a>
-                    </div>
-                </article>
-                <article class="description">
-                    <h1 class="title">Mix Infierno - 24 donas</h1>
-                    <article class="types gc3">
-                        <span>9 de chocolate</span>
-                        <span>9 glaseadas</span>
-                        <span>6 especiales</span>
-                    </article>
-                    <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet est
-                        veritatis
-                        adipisci ducimus delectus, et obcaecati reprehenderit expedita quia hic optio nostrum doloremque
-                        deleniti magnam autem exercitationem perspiciatis corporis!</div>
-                    <div class="gc-2">
-                        <p class="precio">
-                            <i class="icon-certificate"></i>
-                            <span>$2200</span>
-                        </p>
-                        <a class="btn-primary" href="http://wa.me/+59898760446" title="Solicitá las tuyas por WhatsApp"
-                            target="_blank" rel="noopener noreferrer"><i class="icon-check"></i> Lo quiero</a>
-                    </div>
-                </article>
-                <article class="description foot" style="z-index:9; overflow-y:scroll;" id="contactos">
-
-                    <div class="contactos">
-                        <span class="tt"><i class="icon-comments"></i> Contactanos</span>
-                        <p class="tels">
-                            <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
-                            <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
-                        </p>
-                    </div>
-                    <div class="rrss">
-                        <p><i class="icon-plus"></i> Seguinos en redes</p>
-                        <div>
-                            <a href="https://www.instagram.com/DreamyDonuts" title="Visitanos en Instagram" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/DreamyDonuts/" title="Visitanos en facebook" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-facebook"></i>
-                            </a>
-                            <a href="https://wa.me/+59898760446/" title="Escibenos por WhatsApp" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-tiktok"></i>
-                            </a>
-                            <a href="https://youtube.com/" title="Visitá nuestro canal de YouTube" target="_blank" rel="noopener noreferrer">
-                                <i class="icon-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="location">
-                        <p><i class="icon-location-dot"></i> ¿Donde estamos?</p>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2752.002107188388!2d-56.169889861130095!3d-34.888866716513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1743617295634!5m2!1ses-419!2suy"
-                            width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                        <p>Hocquart 2107</p>
-                    </div>
-                    <div class="footer_footer">
-                        Copyright 2025. Dreamy Donuts. Todos los derechos reservados.
-                        Desarollado por: <a href="mailto:kevinmartinez08.97@hotmail.com"
-                            title="Contacta al desarrollador" target="_blank" rel="noopener noreferrer">Kevin
-                            Martínez</a>
-                    </div>
-                </article>
-            </section>
-            <section id="slider">
-                <!-- La pg es vacía para que no aparezca nada en el footer -->
-                <article class="product "></article>
-                <article class="product p3"></article>
-                <article class="product p2"></article>
-                <article class="product p1"></article>
-            </section>
         </div>
 
-        <script src="../assets/js/ofertas.min.js"></script>
-        <script src="../assets/js/menu.min.js"></script>
-    </body>
+        <section id="content">
+            <!-- ! Portada -->
+            <article class="description portada">
+                <div class="glass">
+                    <h1 class="fz-2">Promociones</h1>
+                    <h2>Conocé las ofertas irresistibles para disfrutar solo, en familia, con amigos o compañeros.
+                    </h2>
+                    <p class="promo promo1">20% OFF con el código #DREAMY20</p>
+                    <p class="promo promo2">Llevando el Pack Goloso, 10% OFF en tu próxima compra</p>
+                </div>
+            </article>
+
+            <!--! Promo 1 -->
+            <article class="description">
+                <h1 class="title">Mix Lujuria - 6 donas</h1>
+                <article class="types gc2">
+                    <span>4 de chocolate</span>
+                    <span>2 glaseadas</span>
+                </article>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet est
+                    veritatis
+                    adipisci ducimus delectus, et obcaecati reprehenderit expedita quia hic optio nostrum doloremque
+                    deleniti magnam autem exercitationem perspiciatis corporis!</div>
+                <div class="gc-2">
+                    <p class="precio">
+                        <i class="icon-certificate"></i>
+                        <span>$500</span>
+                    </p>
+                    <a class="btn-primary" href="http://wa.me/+59898760446" title="Solicitá las tuyas por WhatsApp"
+                        target="_blank" rel="noopener noreferrer"><i class="icon-check"></i> Lo quiero</a>
+                </div>
+            </article>
+
+            <!--! Promo 2 -->
+            <article class="description">
+                <h1 class="title">Mix Delirio - 9 donas</h1>
+                <article class="types gc3">
+                    <span>4 glaseadas</span>
+                    <span>4 bañadas</span>
+                    <span>1 especial</span>
+                </article>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet est
+                    veritatis
+                    adipisci ducimus delectus, et obcaecati reprehenderit expedita quia hic optio nostrum doloremque
+                    deleniti magnam autem exercitationem perspiciatis corporis!</div>
+                <div class="gc-2">
+                    <p class="precio">
+                        <i class="icon-certificate"></i>
+                        <span>$820</span>
+                    </p>
+                    <a class="btn-primary" href="http://wa.me/+59898760446" title="Solicitá las tuyas por WhatsApp"
+                        target="_blank" rel="noopener noreferrer"><i class="icon-check"></i> Lo quiero</a>
+                </div>
+            </article>
+
+            <!--! Promo 3 -->
+            <article class="description">
+                <h1 class="title">Mix Infierno - 24 donas</h1>
+                <article class="types gc3">
+                    <span>9 de chocolate</span>
+                    <span>9 glaseadas</span>
+                    <span>6 especiales</span>
+                </article>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae amet est
+                    veritatis
+                    adipisci ducimus delectus, et obcaecati reprehenderit expedita quia hic optio nostrum doloremque
+                    deleniti magnam autem exercitationem perspiciatis corporis!</div>
+                <div class="gc-2">
+                    <p class="precio">
+                        <i class="icon-certificate"></i>
+                        <span>$2200</span>
+                    </p>
+                    <a class="btn-primary" href="http://wa.me/+59898760446" title="Solicitá las tuyas por WhatsApp"
+                        target="_blank" rel="noopener noreferrer"><i class="icon-check"></i> Lo quiero</a>
+                </div>
+            </article>
+
+            <!--! Footer -->
+            <article class="description foot" style="z-index:9; overflow-y:scroll;" id="contactos">
+
+                <div class="contactos">
+                    <span class="tt"><i class="icon-comments"></i> Contactanos</span>
+                    <p class="tels">
+                        <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
+                        <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
+                    </p>
+                </div>
+                <div class="rrss">
+                    <p><i class="icon-plus"></i> Seguinos en redes</p>
+                    <div>
+                        <a href="https://www.instagram.com/DreamyDonuts" title="Visitanos en Instagram" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="icon-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/DreamyDonuts/" title="Visitanos en facebook" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/+59898760446/" title="Escibenos por WhatsApp" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="icon-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com/" title="Visitá nuestro canal de YouTube" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="icon-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <p><i class="icon-location-dot"></i> ¿Donde estamos?</p>
+                    <iframe title="Ubicación de Dreamy Donuts"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2752.002107188388!2d-56.169889861130095!3d-34.888866716513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1743617295634!5m2!1ses-419!2suy"
+                        width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <p>Hocquart 2107</p>
+                </div>
+                <div class="footer_footer">
+                    Copyright 2025. Dreamy Donuts. Todos los derechos reservados.
+                    Desarollado por: <a href="mailto:kevinmartinez08.97@hotmail.com" title="Contacta al desarrollador"
+                        target="_blank" rel="noopener noreferrer">Kevin
+                        Martínez</a>
+                </div>
+            </article>
+
+        </section>
+        <section id="slider">
+            <!-- La pg es vacía para que no aparezca nada en el footer -->
+            <article class="product p0"></article>
+            <article class="product p3"></article>
+            <article class="product p2"></article>
+            <article class="product p1"></article>
+            <article class="product p0"></article>
+
+        </section>
+    </div>
+
+    <script src="../assets/js/ofertas.min.js" defer></script>
+    <script src="../assets/js/menu.min.js" defer></script>
+</body>
 
 </html>
