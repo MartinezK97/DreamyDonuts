@@ -169,7 +169,7 @@ p.precio {
     padding: 0 1rem;
     align-content: flex-start;
     align-content: center;
-    position: relative
+    position: relative;
 }
 
 #content .description.portada {
@@ -558,11 +558,8 @@ p.precio {
     }
 
 
-    .portada {
-        width: 100vw !important;
-        margin: 0 !important;
-        min-width: 900px !important;
-        max-width: 900px;
+    #content .description.portada {
+        background-image: url(../img/promos/portada-desktop.webp);
     }
 
     .portada h1 {
