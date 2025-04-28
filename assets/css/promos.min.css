@@ -183,7 +183,7 @@ p.precio {
 
 .glass {
     backdrop-filter: blur(10px);
-    max-width: clamp(150px, 90%, 400px);
+    width: clamp(150px, 90%, 700px);
     box-shadow: 0 0 15px #0008;
     border-radius: 10px;
     padding: 2rem;
@@ -485,6 +485,10 @@ p.precio {
 }
 
 @media (width > 999px) {
+    #menu{
+        display:none;
+    }
+
     #slider {
         /* border: solid 1px; */
         width: 350px;
@@ -563,6 +567,14 @@ p.precio {
     }
 
     .portada h1 {
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    .portada h2 {
+        font-size: 2rem;
+    }
+
+    .portada .promo {
+        font-size: 1.5rem;
     }
 }

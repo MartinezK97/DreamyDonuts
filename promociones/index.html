@@ -68,6 +68,9 @@
     <link rel="preload" as="image" href="../assets/img/promos/portada-desktop.webp" imagesrcset="
         ../assets/img/promos/portada.webp 480w,
         ../assets/img/promos/portada-desktop.webp 1024w" sizes="100vw">
+
+
+    <link rel="preload" href="../assets/fonts/Sour_Gummy/SourGummy-Black.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Schema.org Optimizado para Uruguay -->
     <script type="application/ld+json">
 
@@ -180,6 +183,9 @@
             text-decoration: none;
         }
 
+        #menu.hide {
+            transform: translateX(100%)
+        }
         /* Botón de menú */
         .btn-menu {
             font-size: 2rem;
@@ -200,7 +206,7 @@
 
         .glass {
             backdrop-filter: blur(10px);
-            max-width: clamp(150px, 90%, 400px);
+            width: clamp(150px, 90%, 700px);
             box-shadow: 0 0 15px #0008;
             border-radius: 10px;
             padding: 2rem;
