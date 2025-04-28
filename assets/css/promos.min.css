@@ -102,17 +102,20 @@
 
 .bodyBG {
     inset: 0 0 auto 0;
-    height: calc(var(--header-height) + 35dvh);
+    height: 40dvh;
+    min-height: 40dvh;
+    max-height: 40dvh;
     z-index: 0;
     display: flex;
     scroll-snap-type: x mandatory;
     white-space: nowrap;
-    top: -1rem
+    top: 0;
+    /* border: solid 1px fuchsia; */
 }
 
 .foot,
 p.precio {
-    position: relative
+    position: relative;
 }
 
 #content,
@@ -488,14 +491,11 @@ p.precio {
         left: 1rem;
         right: auto;
         height: 330px;
-        border: solid 1px green;
         left: calc((100vw - 950px) / 2);
         right: auto;
-        animation: none;
     }
 
     #content {
-        border: solid 1px blue;
         width: 100vw;
         margin: 0 auto;
     }
@@ -503,8 +503,6 @@ p.precio {
 
     #content .description:not(.portada) {
         max-width: 600px;
-        border: solid 1px red;
-        /* margin: 0 0 auto auto; */
         margin-top: 0;
         margin-left: auto;
         margin-bottom: 0;
@@ -521,7 +519,7 @@ p.precio {
 
     .types {
         position: absolute;
-        top: 30.5dvh;
+        top: calc(40dvh - var(--header-height) - 1rem);
         /* border: solid 1px red; */
         /* left: 1.5rem; */
 
