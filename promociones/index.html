@@ -55,10 +55,14 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="msapplication-TileColor" content="#ffffff">
 
-    <link rel="preload" href="../assets/css/default.min.css" as="style">
-    <link rel="preload" href="../assets/css/icons.min.css" as="style">
-    <link rel="preload" href="../assets/css/promos.min.css" as="style">
-    
+    <link rel="preload" href="../assets/css/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/promos.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/default.min.css">
+        <link rel="stylesheet" href="../assets/css/icons.css">
+        <link rel="stylesheet" href="../assets/css/promos.min.css">
+    </noscript>
 
     <script src="../assets/js/icons.min.js" defer></script>
     <link rel="preload" as="image" href="../assets/img/promos/portada-desktop.webp" imagesrcset="
@@ -147,7 +151,6 @@
             margin: 0;
             padding: 0;
             font-family: "Sour Gummy", sans-serif;
-            /* background-image: url(../assets/img/promos/portada.webp); */
             background-size: cover;
         }
 
@@ -194,7 +197,7 @@
 
         .portada {
             width: 100vw;
-            background-image: url(../img/promos/portada.webp);
+            background-image: url(../assets/img/promos/portada.webp);
             background-size: cover;
             background-attachment: fixed;
         }
@@ -202,19 +205,23 @@
 
 
         .glass {
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px);
             width: clamp(150px, 90%, 700px);
             box-shadow: 0 0 15px #0008;
             border-radius: 10px;
             padding: 2rem;
             margin: 0 auto;
-            background-image: linear-gradient(to bottom right, #fff2, #0001, #fff2);
+            background:#fff5;
         }
 
         .glass h1 {
             margin: 1rem auto;
             color: var(--titles-color);
             text-shadow: none;
+            font-size:2rem;
+        }
+        .glass h2{
+            font-size: 1.5rem;
         }
 
         .glass p.promo {
@@ -223,6 +230,13 @@
             box-shadow: 0 0 10px #0007;
             padding: 1rem;
             position: relative;
+        }
+
+        .glass a{
+            padding:0.5rem 2rem;
+            display: block;
+            margin:1rem auto;
+            font-size:1.25rem;
         }
 
         .glass p.promo:before {
@@ -381,11 +395,12 @@
                     </h2>
                     <p class="promo promo1">20% OFF con el código #DREAMY20</p>
                     <p class="promo promo2">Llevando el Pack Goloso, 10% OFF en tu próxima compra</p>
+                    <a href="#promo1" title="Ver promociones" class="btn-primary cta">Ver promociones</a>
                 </div>
             </article>
 
             <!--! Promo 1 -->
-            <article class="description">
+            <article class="description" id="promo1">
                 <h1 class="title">Mini Placer</h1>
                 <article class="types gc2">
                     <span>4 de chocolate</span>

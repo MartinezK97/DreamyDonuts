@@ -188,7 +188,7 @@ p.precio {
     border-radius: 10px;
     padding: 2rem;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom right, #fff2, #0001, #fff2);
+    background:#fff7;
 }
 
 .glass h1 {
@@ -567,14 +567,19 @@ p.precio {
     }
 
     .portada h1 {
-        font-size: 5rem;
+        font-size: 5rem !important;
     }
 
     .portada h2 {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     .portada .promo {
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
+    }
+    .portada a{
+        font-size:1.5rem !important;
+        padding:1.25rem 2.5rem !important;
+        margin: 1rem auto 0 !important;
     }
 }
