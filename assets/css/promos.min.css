@@ -252,8 +252,15 @@ p.precio {
 .gc-2 {
     grid-template-columns: min-content auto;
     align-content: center;
-    max-width: 94vw
+    max-width: 94vw;
+    align-content:center;
+    margin-top:1rem;
 }
+
+.gc-2 .btn-primary{
+    margin:auto 0 auto auto ;
+}
+
 
 .precio span,
 .types,
@@ -295,8 +302,8 @@ p.precio {
 }
 
 p.precio {
-    width: 5rem;
-    height: 5rem
+    width: 4rem;
+    height: 4rem
 }
 
 .foot:after,
@@ -307,12 +314,13 @@ p.precio {
 }
 
 .precio i {
-    font-size: 5rem
+    font-size: 4rem;
+    color:#f0d1b0;
 }
 
 .precio span {
     left: 0;
-    color: #fff;
+    color: var(--titles-color);
     max-height: max-content;
     margin: auto;
     font-size: 1.25rem;

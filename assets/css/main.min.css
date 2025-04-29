@@ -248,7 +248,8 @@
 }
 
 .description .price i {
-    font-size: 4rem
+    font-size: 4rem;
+    color:#f0d1b0;
 }
 
 .price span.num {
@@ -259,7 +260,8 @@
     max-height: max-content;
     color: #fff;
     font-size: 1.25rem;
-    font-weight: 600
+    font-weight: 600;
+    color:var(--titles-color);
 }
 
 .gc2 {
