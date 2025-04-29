@@ -60,11 +60,11 @@
     <link rel="preload" href="/assets/fonts/SourGummy/SourGummy-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/assets/fonts/Pattaya/Pattaya-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- <link rel="stylesheet" href="./assets/css/default.min.css" as="style">
+    <link rel="stylesheet" href="./assets/css/default.min.css" as="style">
     <link rel="stylesheet" href="./assets/css/main.min.css" as="style">
     <link rel="stylesheet" href="./assets/css/responsive.css" as="style">
-    <link rel="stylesheet" href="./assets/css/icons.min.css" as="style"> -->
-    <link rel="preload" href="./assets/css/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./assets/css/icons.min.css" as="style">
+    <!-- <link rel="preload" href="./assets/css/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="./assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -73,7 +73,7 @@
         <link rel="stylesheet" href="./assets/css/icons.min.css">
         <link rel="stylesheet" href="./assets/css/main.min.css">
         <link rel="stylesheet" href="./assets/css/responsive.css">
-    </noscript>
+    </noscript> -->
     
     <script src="./assets/js/icons.min.js" defer></script>
 
@@ -139,7 +139,7 @@
       }
     }
     </script>
-    <style>
+    <style fetchpriority="high">
         /* Critical CSS */
 
         /* Variables principales */
@@ -201,6 +201,9 @@
             text-decoration: none;
         }
 
+        #menu.hide{
+            transform:translatex(100%);
+        }
         /* Botón de menú */
         .btn-menu {
             font-size: 2rem;
@@ -251,41 +254,7 @@
             vertical-align: middle;
         }
 
-        /* Botón de WhatsApp fijo */
-        .btn-fixed-wpp {
-            position: fixed;
-            bottom: 1rem;
-            right: 1rem;
-            font-size: 4rem;
-            color: green;
-        }
-
-        /* Categorías */
-        .category {
-            position: absolute;
-            background: #f0d1b0;
-            right: 1rem;
-            top: -2rem;
-            padding: 0.5rem 1rem;
-            border-radius: 0 5px 5px;
-            box-shadow: -2px 2px 5px #0008;
-            font-size: 0.75rem;
-        }
-
-        /* Precios */
-        .description .price {
-            display: grid;
-            grid-template-columns: min-content auto;
-            align-items: center;
-            font-size: 1.25rem;
-            color: #fff;
-        }
-
-        .description .price i {
-            font-size: 4rem;
-        }
-
-        /* Botones */
+              /* Botones */
         .btn-primary {
             display: block;
             margin-top: 1rem;
