@@ -210,18 +210,27 @@
             background-image: url(../assets/img/promos/portada.webp);
             background-size: cover;
             background-attachment: fixed;
+            position:relative;
         }
-
+    .portada:before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #0005;
+        z-index:0;
+    }
 
 
         .glass {
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(30px);
             width: clamp(150px, 90%, 700px);
             box-shadow: 0 0 15px #0008;
             border-radius: 10px;
             padding: 2rem;
             margin: 0 auto;
             background:#fff;
+            z-index:1;
+            border:solid 1px#0002;
         }
 
         .glass h1 {
@@ -394,8 +403,9 @@
             <article class="b1"></article>
             <article class="b2"></article>
             <article class="b3"></article>
+            <article class="b1"></article>
+            <article class="b2"></article>
             <article class="b0"></article>
-
         </div>
 
         <section id="content">
