@@ -1,3 +1,11 @@
+ /* Variables principales */
+ :root {
+    --primary: #ffc90e;
+    --secondary:#f0d1b0;
+    --titles-color: #5b3813;
+    --header-height: 4rem;
+    --body-background: rgb(255, 251, 237);
+}
 
 @font-face {
     font-family: 'Sour Gummy';
@@ -53,6 +61,12 @@
 .header nav {
     align-self: center
 }
+
+
+.header nav{
+    align-items: center;
+}   
+
 
 .location p,
 .rrss p {
@@ -159,7 +173,6 @@ h6 {
     left: 0;
     z-index: 999;
     grid-template-columns: max-content auto;
-    text-shadow: 0 0 6px #0008
 }
 
 .header nav {
@@ -168,6 +181,14 @@ h6 {
     max-height: max-content;
     margin: auto 0 auto auto;
     grid-template-columns: repeat(4, max-content)
+}
+
+.btn-contactos{
+    background:var(--secondary);
+    padding:0.5rem 2rem;
+    height:min-content;
+    color:var(--titles-color) !important;
+    border-radius:100px;
 }
 
 .color-primary {
@@ -244,7 +265,7 @@ h6 {
     color: #fff;
     transform: translate(calc(-100% - .75rem), .45rem);
     border: none;
-    text-shadow: 0 0 1px #0003
+    /* text-shadow: 0 0 1px #0003 */
 }
 
 .contactos,

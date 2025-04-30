@@ -32,14 +32,115 @@
     <link rel="stylesheet" href="../assets/css/default.min.css">
     <link rel="stylesheet" href="../assets/css/nosotros.css">
 
-    <!-- FontAwesome 6 -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" as="video" href="../assets/img/others/notostros-portada-desktop.webp" type="image/webp">
+    <link rel="preload" href="../assets/fonts/SourGummy/SourGummy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../assets/fonts/Pattaya/Pattaya-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preload" href="../assets/css/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/nosotros.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="../assets/css/default.min.css">
+        <link rel="stylesheet" href="../assets/css/icons.min.css">
+        <link rel="stylesheet" href="../assets/css/nosotros.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+    </noscript>
+    <style media="max-width: 999px" fetchpriority="hight">
+         :root {
+            --primary: #ffc90e;
+            --secondary:#f0d1b0;
+            --titles-color: #5b3813;
+            --header-height: 4rem;
+            --body-background: rgb(255, 251, 237);
+        }
+        @font-face{font-family:icomoon;src:url('./assets/fonts/icons/icomoon.eot');
+        src:url('./assets/fonts/icons/icomoon.eot?vnq033') format('embedded-opentype'),
+        url('./assets/fonts/icons/icomoon.ttf?vnq033') format('truetype'),
+        url('./assets/fonts/icons/icomoon.woff?vnq033') format('woff'),
+        url('./assets/fonts/icons/icomoon.svg?vnq033') format('svg');
+        font-weight:400;font-style:normal;font-display:block}
+
+        body{
+        background-image: url(../assets/img/others/notostros-portada-desktop.webp);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .content {
+        /* margin-top:; */
+        padding: 1rem;
+        min-height: calc(100vh - var(--header-height));
+        display: grid;
+        grid-template-columns:auto 500px;
+        width: clamp(190px, 100%, 999px);
+        box-shadow: 0 0 5px #0001;
+        margin: var(--header-height)auto 0;
+        align-items: center;
+        backdrop-filter: blur(30px);
+        grid-gap:0 1.75rem ;
+        
+    }
+
+    .content h1{
+        grid-column: 1/3;
+        text-align:center;
+        font-size: 3.5rem;
+    }
+
+    .title2{
+        grid-column: 1/3;
+        text-align:center;
+        font-size: 2.5rem;
+    }
+    p{font-size:1.25rem;}
+    h2{font-size: 2.5rem;}
+    h3{font-size: 2rem;}
+
+    .picture{
+        grid-column: 2/3;
+        grid-row:2/5;
+        padding: 1rem;
+    }
+    .team {
+        width: clamp(150px, 85vw, 450px);
+        height: clamp(140px, 85vw, 450px);
+        /* border: solid 1px; */
+        margin:0 auto;
+        background-image: url(../assets/img/others/team.webp);
+        background-size: cover;
+        background-size: 100%;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        position: relative;
+        
+    }
+
+    .team:before {
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        background-color: rgb(254, 191, 191);
+        border-radius: 50%;
+        z-index: -5;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        filter: none;
+    }
+
+    .desc{
+        grid-column: 2/3;
+        color:#555;
+        font-size: 1rem;
+        box-shadow: 0 0 15px -5px #0004;
+        border-radius: 15px;
+        padding: 2rem 1rem;
+    }
+
+    </style>
 </head>
 
 <body>
@@ -51,19 +152,19 @@
         </a>
         <nav class="dg gtc-6 gg-1-5 maxw-min mar-a-0-a-a ac-center ai-center">
             <a href="../" title="Ir al inicio" class="dg gtc-min-a gg-5">
-                <i class="fa fa-home as-center"></i>
+                <i class="icon-home as-center"></i>
                 <span> Inicio</span>
             </a>
             <a href="../promociones" title="Ir a la página de promociones" class="dg gtc-min-a gg-5">
                 <i class="icon-donut"></i>
                 <span>Promociones</span>
             </a>
-            <a href="./nosotros" title="Ir a sobre mi" class="dg gtc-min-a gg-5 minw-max">
-                <i class="fa fa-user as-center"></i>
+            <a href="../nosotros" title="Ir a sobre mi" class="dg gtc-min-a gg-5 minw-max">
+                <i class="icon-users as-center"></i>
                 <span>Nosotros</span>
             </a>
-            <a href="#contactos" title="Ir a testimonios" class="dg gtc-min-a gg-5">
-                <i class="fa fa-envelope as-center"></i>
+            <a href="#contactos" title="Ir a la página de contactos" class="dg gtc-min-a gg-5 btn-contactos">
+                <i class="icon-envelope as-center"></i>
                 <span>Contactos</span>
             </a>
         </nav>
@@ -71,30 +172,80 @@
 
     <!--! Menu -->
     <div id="menu" class="menu hide">
-        <button class="btn-menu fz-2 maxw-max"><i class="fa fa-bars"></i></button>
-        <a href="../" title="Ir al inicio"><i class="fa fa-home"></i> Inicio</a>
+        <button class="btn-menu fz-2 maxw-max"><i class="icon-bars"></i></button>
+        <a href="../" title="Ir al inicio"><i class="icon-home"></i> Inicio</a>
         <a href="../promociones" title="Ir al inicio"><i class="icon-donut"></i> Promociones</a>
-        <a href="#" class="color-primary" title="Ir al inicio"><i class="fa fa-users"></i> Nosotros</a>
-        <a href="#contactos" title="Ir al inicio"><i class="fa fa-envelope"></i> Contactos</a>
+        <a href="#" class="color-primary" title="Ir al inicio"><i class="icon-users"></i> Nosotros</a>
+        <a href="#contactos" title="Ir al inicio"><i class="icon-envelope"></i> Contactos</a>
     </div>
 
     <div class="content clamp">
-        <h1>Nosotros</h1>
-        Somos Nicolle y Alan, los creadores de Rosquillas Diablo.
-        Nos facinan las donas y nos hemos vuelto expertos en lo que hacemos.
-        Por eso hemos dedicido llevarlas al siguiente nivel.
-        Creemos en el poder de lo dulce, pero también en el poder de lo distinto.
-        Por eso no te vas a olvidar de nosotros después nuestras probar nuestras rosquillas.
-        <br>
-        <br>
-        Nuesta mision es endulzarte el día y sacarte una sonrisa, o ¿por qué no?, una sorpresa.
-        Nuestro enfoque es hacer atrevidos, irresistibles y altamente adictivas. Nunca probarás nada igual.
-        <div class="team">
-
+        <h1>Hola, somos {Fundador} y {Fundadora}</h1>
+        <p class="intro">Dos apasionados de las donas que un día decidimos convertir nuestro amor por lo dulce en algo extraordinario. Así nació Rosquillas Diablo: de nuestras largas noches experimentando en la cocina, risas compartidas y esa loca idea de que los postres deberían ser aventuras, no solo calorías.</p>
+        <div class="picture">
+            <div class="team"></div>
+            <p class="desc">¿La mejor parte de nuestro viaje? Ver cómo reaccionan nuestros clientes cuando prueban algo que salió de nuestra cocina (y nuestro corazón). ¿Te animas a ser el próximo en descubrir tu combinación favorita?</p>
+        </div>
+        <h2>Nuestra locura tiene un propósito</h2>
+        <p>Creemos que una buena rosquilla puede cambiar tu día. Por eso nos obsesionamos con cada detalle: desde la esponjosidad perfecta hasta esos toques inesperados que te hacen sonreír. ¿Nuestro secreto? Jugamos con sabores como niños con plastilina, pero con años de práctica dando forma a nuestras creaciones.</p>
+        <h2 class="title2">No hacemos donas, creamos experiencias</h2>
+        <div>
+            <h3>Lo que nos mueve</h3>
+            <p>Queremos ser tu pequeño capricho rebelde. Ese momento en el que el chocolate se encuentra con el chile, lo crocante juega con lo suave, y tu paladar descubre que lo tradicional puede ser extraordinario. Si al probarnos se te escapa un "¡Wow!", hemos hecho nuestro trabajo.</p>
+        </div>
+        <div>
+            <h3>Nuestra promesa</h3>
+            <p>Usamos ingredientes de calidad, técnicas que hemos perfeccionado con los años, y una pizca de atrevimiento en cada receta. No encontrarás sabores aburridos aquí - cada mordisco es nuestro desafío amoroso a la repostería común.</p>
         </div>
     </div>
+    <div class="footer">
+        <section>
 
+            <div class="contactos">
+                <span class="tt"><i class="icon-comments"></i> Contactanos</span>
+                    <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
+                    <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
+            </div>
+            <div class="rrss">
+                <p><i class="icon-plus"></i> Seguinos en redes</p>
+                <div>
+                    <a href="https://www.instagram.com/DreamyDonuts" title="Visitanos en Instagram" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/DreamyDonuts/" title="Visitanos en facebook" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/+59898760446/" title="Escibenos por WhatsApp" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="icon-tiktok"></i>
+                    </a>
+                    <a href="https://youtube.com/" title="Visitá nuestro canal de YouTube" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="icon-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="location">
+                <p><i class="icon-location-dot"></i> ¿Donde estamos?</p>
+                <div class="map-container"
+                    data-src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2752.002107188388!2d-56.169889861130095!3d-34.888866716513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2suy!4v1743617295634!5m2!1ses-419!2suy">
+                </div>
+                <p>Hocquart 2107</p>
+            </div>
+            <div class="footer_footer">
+                Copyright 2025. Dreamy Donuts. Todos los derechos reservados.
+                Desarollado por: <a href="mailto:kevinmartinez08.97@hotmail.com" title="Contacta al desarrollador"
+                    target="_blank" rel="noopener noreferrer">Kevin
+                    Martínez</a>
+            </div>   
+        </section>
+
+    </div>
     <script src="../assets/js/menu.min.js"></script>
+    <script src="../assets/js/ofertas.min.js"></script>
 </body>
 
 </html>

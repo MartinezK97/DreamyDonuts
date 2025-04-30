@@ -1,15 +1,48 @@
+body{
+    background-image: url(../img/others/notostros-portada-desktop.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
 .content {
-    margin-top: var(--header-height);
+    /* margin-top:; */
     padding: 1rem;
-    border: solid 1px;
     min-height: calc(100vh - var(--header-height));
+    display: grid;
+    grid-template-columns:auto 500px;
+    width: clamp(190px, 100%, 999px);
+    box-shadow: 0 0 5px #0001;
+    margin: var(--header-height)auto 0;
+    align-items: center;
+    backdrop-filter: blur(30px);
+    grid-gap:0 1.75rem ;
+    
 }
 
+.content h1{
+    grid-column: 1/3;
+    text-align:center;
+    font-size: 3.5rem;
+}
+
+.title2{
+    grid-column: 1/3;
+    text-align:center;
+    font-size: 2.5rem;
+}
+p{font-size:1.25rem;}
+h2{font-size: 2.5rem;}
+h3{font-size: 2rem;}
+
+.picture{
+    grid-column: 2/3;
+    grid-row:2/5;
+    padding: 1rem;
+}
 .team {
-    width: clamp(150px, 100vw, 300px);
-    height: clamp(150px, 100vw, 300px);
+    width: clamp(150px, 85vw, 450px);
+    height: clamp(140px, 85vw, 450px);
     /* border: solid 1px; */
-    margin: 1rem auto;
+    margin:0 auto;
     background-image: url(../img/others/team.webp);
     background-size: cover;
     background-size: 100%;
@@ -17,14 +50,14 @@
     background-repeat: no-repeat;
     border-radius: 50%;
     position: relative;
-    /* filter: drop-shadow(0 0 5px #000); */
+    
 }
 
 .team:before {
     content: "";
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     background-color: rgb(254, 191, 191);
     border-radius: 50%;
     z-index: -5;
@@ -33,4 +66,165 @@
     right: 0;
     margin: auto;
     filter: none;
+}
+
+.desc{
+    grid-column: 2/3;
+    color:#555;
+    font-size: 1rem;
+    box-shadow: 0 0 15px -5px #0004;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+}
+
+.footer {
+    min-height: calc(100vh - var(--header-height));
+    display:grid;
+    grid-gap:1rem;
+    position:relative;
+}
+
+.footer:before{
+    content:"";
+    inset: 0;
+    background:#0003;
+    position: absolute;
+}
+
+.footer section{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    max-width: min-content;
+    margin:0 auto;
+    grid-gap:1rem;
+    grid-auto-rows: min-content;
+    max-height: min-content;
+    margin: auto auto;
+}
+.contactos{
+    display:grid;
+    min-width: max-content;
+    grid-gap:2rem;
+    max-height: min-content;
+    grid-row:1/2;
+    max-height: min-content;
+}
+.contactos span{
+    color:#fff;
+    font-size:1.5rem;
+    grid-column:1/3;
+}
+.contactos a{
+    font-size: 1.25rem !important;
+}
+
+.location{
+    grid-column:2/3;
+    grid-row: 1/3;
+    min-width: 50vw;
+    max-height: min-content;
+    margin:0 auto;
+}
+
+.rrss{
+    max-height: min-content;
+    padding:1rem;
+    width: 100%;
+    margin:0 auto;
+    min-width: 100%;
+}
+
+.rrss p{
+    font-size: 1.5rem;
+}
+
+
+@media(width < 999px){
+    .content{
+        grid-template-columns:1fr !important;
+        padding:1.5rem;
+    }
+
+    .content h1{
+        font-size: 2rem;
+        grid-column: 1/1;
+    }
+    .picture{
+        grid-row:3/4;
+    }
+    .picture .team{
+        width:100%;
+        height: 0;
+        padding-bottom:100%;
+    }
+
+    .picture, .title2{
+        grid-column: 1/1;
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height:1.5;
+    }
+    .footer{padding:0;}
+
+    .footer section{
+        display:grid;
+        grid-template-columns:1fr;
+        padding:0.5rem;
+        max-width: min-content;
+        margin:0 auto;
+        grid-gap:1rem;
+        grid-auto-rows: min-content;
+        max-height: min-content;
+        margin: auto auto;
+        margin-bottom:4rem;
+    }
+    .contactos{
+        display:grid;
+        min-width: max-content;
+        grid-gap:1rem;
+        max-height: min-content;
+        grid-row:1/1;
+        max-height: min-content;
+    }
+    .contactos span{
+        color:#fff;
+        font-size:1.5rem;
+        grid-column:1/3;
+    }
+    .contactos a{
+        font-size: 1.25rem !important;
+    }
+    
+    .location{
+        grid-column:1/1;
+        grid-row: 3/4;
+        min-width: 50vw;
+        max-height: min-content;
+        margin:0 auto;
+    }
+    
+    .rrss{
+        max-height: min-content;
+        padding:1rem;
+        width: 100%;
+        margin:0 auto;
+        min-width: 100%;
+    }
+    
+    .rrss p{
+        font-size: 1.5rem;
+    }
+
+    .location p{
+        font-size:1.5rem;
+    }
 }
