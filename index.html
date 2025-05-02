@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="theme-color" content="#ffc90e">
     <!-- Title Website -->
     <title>Dreamy Donuts | Donas Artesanales en Montevideo</title>
 
@@ -130,15 +129,28 @@
     </script>
     <style fetchpriority="high">
         /* Critical CSS */
-
+        @media (prefers-color-scheme: light){
         /* Variables principales */
-        :root {
-            --primary: #ffc90e;
-            --secondary:#f0d1b0;
-            --titles-color: #5b3813;
-            --header-height: 4rem;
-            --body-background: rgb(255, 251, 237);
+            :root {
+                --primary: #ffc90e;
+                --secondary:#f0d1b0;
+                --titles-color: #5b3813;
+                --header-height: 4rem;
+                --body-background: rgb(255, 251, 237);
+            }
         }
+        @media (prefers-color-scheme: dark){
+        /* Variables principales */
+            :root {
+                --primary: #ffc90e;
+                --secondary:#f0d1b0;
+                --titles-color: #5b3813;
+                --header-height: 4rem;
+                --body-background: rgb(255, 251, 237);
+            }
+        }
+        
+        
         @font-face{font-family:icomoon;src:url('./assets/fonts/icons/icomoon.eot');
         src:url('./assets/fonts/icons/icomoon.eot?vnq033') format('embedded-opentype'),
         url('./assets/fonts/icons/icomoon.ttf?vnq033') format('truetype'),
@@ -156,7 +168,7 @@
 
         h1 {
             font-size: 3rem;
-            color: #f0d1b0;
+            color: var(--secondary);
             text-shadow: 0 0 10px #0009;
             text-align: center;
             margin: 4rem auto 0;

@@ -14,6 +14,8 @@
     <meta name="author" content="Kevin Martínez">
     <link rel="canonical" href="https://martinezk97.github.io/DramyDonuts">
 
+    <!-- Configuración de tema -->
+    <meta name="theme-color" content="#5b3813">
     <!-- Open Graph (Facebook y más) -->
     <meta property="og:title" content="Sobre Nosotros | Quien está detrás de Dreamy Donuts">
     <meta property="og:description" content="Descubrí quiénes están detrás de las donas más provocadoras.">
@@ -32,7 +34,7 @@
     <link rel="stylesheet" href="../assets/css/default.min.css">
     <link rel="stylesheet" href="../assets/css/nosotros.css">
 
-    <link rel="preload" as="video" href="../assets/img/others/notostros-portada-desktop.webp" type="image/webp">
+    <link rel="preload" as="image" href="../assets/img/others/notostros-portada-desktop.webp" type="image/webp">
     <link rel="preload" href="../assets/fonts/SourGummy/SourGummy-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../assets/fonts/Pattaya/Pattaya-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -42,7 +44,7 @@
     <link rel="preload" href="../assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet" href="../assets/css/default.min.css">
-        <link rel="stylesheet" href="../assets/css/icons.min.css">
+        <link rel="stylesheet" href="../assets/css/icons.min.css" defer>
         <link rel="stylesheet" href="../assets/css/nosotros.css">
         <link rel="stylesheet" href="../assets/css/responsive.css">
     </noscript>
@@ -52,20 +54,21 @@
             --secondary:#f0d1b0;
             --titles-color: #5b3813;
             --header-height: 4rem;
-            --body-background: rgb(255, 251, 237);
+            --body-background: #fffbed;
         }
-        @font-face{font-family:icomoon;src:url('./assets/fonts/icons/icomoon.eot');
-        src:url('./assets/fonts/icons/icomoon.eot?vnq033') format('embedded-opentype'),
-        url('./assets/fonts/icons/icomoon.ttf?vnq033') format('truetype'),
-        url('./assets/fonts/icons/icomoon.woff?vnq033') format('woff'),
-        url('./assets/fonts/icons/icomoon.svg?vnq033') format('svg');
-        font-weight:400;font-style:normal;font-display:block}
-
-        body{
-        background-image: url(../assets/img/others/notostros-portada-desktop.webp);
-        background-size: cover;
-        background-attachment: fixed;
-    }
+        
+        @font-face{
+            font-family:icomoon;src:url('./assets/fonts/icons/icomoon.eot');
+            src:url('./assets/fonts/icons/icomoon.eot?vnq033') format('embedded-opentype'),
+            url('./assets/fonts/icons/icomoon.ttf?vnq033') format('truetype'),
+            url('./assets/fonts/icons/icomoon.woff?vnq033') format('woff'),
+            url('./assets/fonts/icons/icomoon.svg?vnq033') format('svg');
+            font-weight:400;font-style:normal;font-display:block}
+            body{
+            background-image: url(../assets/img/others/notostros-portada-desktop.webp);
+            background-size: cover;
+            background-attachment: fixed;
+        }
     .content {
         /* margin-top:; */
         padding: 1rem;
@@ -80,13 +83,11 @@
         grid-gap:0 1.75rem ;
         
     }
-
     .content h1{
         grid-column: 1/3;
         text-align:center;
         font-size: 3.5rem;
     }
-
     .title2{
         grid-column: 1/3;
         text-align:center;
@@ -95,7 +96,6 @@
     p{font-size:1.25rem;}
     h2{font-size: 2.5rem;}
     h3{font-size: 2rem;}
-
     .picture{
         grid-column: 2/3;
         grid-row:2/5;
@@ -115,7 +115,6 @@
         position: relative;
         
     }
-
     .team:before {
         content: "";
         position: absolute;
@@ -130,7 +129,6 @@
         margin: auto;
         filter: none;
     }
-
     .desc{
         grid-column: 2/3;
         color:#555;
@@ -139,7 +137,6 @@
         border-radius: 15px;
         padding: 2rem 1rem;
     }
-
     </style>
 </head>
 
@@ -159,17 +156,16 @@
                 <i class="icon-donut"></i>
                 <span>Promociones</span>
             </a>
-            <a href="../nosotros" title="Ir a sobre mi" class="dg gtc-min-a gg-5 minw-max">
+            <a href="../nosotros" title="Ir a sobre mi" class="dg gtc-min-a gg-5 minw-max color-primary">
                 <i class="icon-users as-center"></i>
                 <span>Nosotros</span>
             </a>
-            <a href="#contactos" title="Ir a la página de contactos" class="dg gtc-min-a gg-5 btn-contactos">
+            <a href="#contacto" id="btn-contact" title="Ir a la página de contactos" class="dg gtc-min-a gg-5 btn-contactos">
                 <i class="icon-envelope as-center"></i>
                 <span>Contactos</span>
             </a>
         </nav>
     </div>
-
     <!--! Menu -->
     <div id="menu" class="menu hide">
         <button class="btn-menu fz-2 maxw-max" title="Arir u ocultar menu desplazable"><i class="icon-bars"></i></button>
@@ -178,7 +174,6 @@
         <a href="#" class="color-primary" title="Ir al inicio"><i class="icon-users"></i> Nosotros</a>
         <a href="#contactos" title="Ir al inicio"><i class="icon-envelope"></i> Contactos</a>
     </div>
-
     <div class="content clamp">
         <h1>Hola, somos {Fundador} y {Fundadora}</h1>
         <p class="intro">Dos apasionados de las donas que un día decidimos convertir nuestro amor por lo dulce en algo extraordinario. Así nació Rosquillas Diablo: de nuestras largas noches experimentando en la cocina, risas compartidas y esa loca idea de que los postres deberían ser aventuras, no solo calorías.</p>
@@ -200,11 +195,10 @@
     </div>
     <div class="footer">
         <section>
-
             <div class="contactos">
                 <span class="tt"><i class="icon-comments"></i> Contactanos</span>
-                    <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
-                    <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
+                <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
+                <a href="tel:+59898760446" title="Llamanos"><i class="icon-phone"></i> 098 760 446</a>
             </div>
             <div class="rrss">
                 <p><i class="icon-plus"></i> Seguinos en redes</p>
@@ -227,7 +221,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="location">
                 <p><i class="icon-location-dot"></i> ¿Donde estamos?</p>
                 <div class="map-container"
@@ -242,10 +235,8 @@
                     Martínez</a>
             </div>   
         </section>
-
     </div>
-    <script src="../assets/js/menu.min.js"></script>
-    <!-- <script src="../assets/js/ofertas.min.js"></script> -->
+    <script src="../assets/js/menu.min.js" defer></script>
 </body>
 
 </html>

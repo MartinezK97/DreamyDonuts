@@ -1,3 +1,10 @@
+:root {
+    --primary: #ffc90e;
+    --secondary:#f0d1b0;
+    --titles-color: #5b3813;
+    --header-height: 4rem;
+    --body-background: #fffbed;
+}
 body{
     background-image: url(../img/others/notostros-portada-desktop.webp);
     background-size: cover;
@@ -58,7 +65,7 @@ h3{font-size: 2rem;}
     position: absolute;
     width: 80%;
     height: 80%;
-    background-color: rgb(254, 191, 191);
+    background-color: #febfbf;
     border-radius: 50%;
     z-index: -5;
     bottom: 0;
@@ -137,6 +144,8 @@ h3{font-size: 2rem;}
 .rrss p{
     font-size: 1.5rem;
 }
+
+
 
 
 @media(width < 999px){
