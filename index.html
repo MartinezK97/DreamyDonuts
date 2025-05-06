@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title Website -->
     <title>Dreamy Donuts | Donas Artesanales en Montevideo</title>
 
@@ -62,7 +62,7 @@
     <link rel="stylesheet" href="./assets/css/main.min.css" as="style">
     <link rel="stylesheet" href="./assets/css/responsive.css" as="style">
     <link rel="stylesheet" href="./assets/css/icons.min.css" as="style">
-    
+
     <script src="./assets/js/icons.min.js" defer></script>
 
     <!-- Schema.org Optimizado para Uruguay -->
@@ -129,34 +129,42 @@
     </script>
     <style fetchpriority="high">
         /* Critical CSS */
-        @media (prefers-color-scheme: light){
-        /* Variables principales */
+        @media (prefers-color-scheme: light) {
+
+            /* Variables principales */
             :root {
                 --primary: #ffc90e;
-                --secondary:#f0d1b0;
+                --secondary: #f0d1b0;
                 --titles-color: #5b3813;
                 --header-height: 4rem;
                 --body-background: rgb(255, 251, 237);
             }
         }
-        @media (prefers-color-scheme: dark){
-        /* Variables principales */
+
+        @media (prefers-color-scheme: dark) {
+
+            /* Variables principales */
             :root {
                 --primary: #ffc90e;
-                --secondary:#f0d1b0;
+                --secondary: #f0d1b0;
                 --titles-color: #5b3813;
                 --header-height: 4rem;
                 --body-background: rgb(255, 251, 237);
             }
         }
-        
-        
-        @font-face{font-family:icomoon;src:url('./assets/fonts/icons/icomoon.eot');
-        src:url('./assets/fonts/icons/icomoon.eot?vnq033') format('embedded-opentype'),
-        url('./assets/fonts/icons/icomoon.ttf?vnq033') format('truetype'),
-        url('./assets/fonts/icons/icomoon.woff?vnq033') format('woff'),
-        url('./assets/fonts/icons/icomoon.svg?vnq033') format('svg');
-        font-weight:400;font-style:normal;font-display:block}
+
+
+        @font-face {
+            font-family: icomoon;
+            src: url('./assets/fonts/icons/icomoon.eot');
+            src: url('./assets/fonts/icons/icomoon.eot?vnq033') format('embedded-opentype'),
+                url('./assets/fonts/icons/icomoon.ttf?vnq033') format('truetype'),
+                url('./assets/fonts/icons/icomoon.woff?vnq033') format('woff'),
+                url('./assets/fonts/icons/icomoon.svg?vnq033') format('svg');
+            font-weight: 400;
+            font-style: normal;
+            font-display: block
+        }
 
         /* Estilos básicos */
         body {
@@ -203,9 +211,10 @@
             text-decoration: none;
         }
 
-        #menu.hide{
-            transform:translatex(100%);
+        #menu.hide {
+            transform: translatex(100%);
         }
+
         /* Botón de menú */
         .btn-menu {
             font-size: 2rem;
@@ -256,7 +265,7 @@
             vertical-align: middle;
         }
 
-              /* Botones */
+        /* Botones */
         .btn-primary {
             display: block;
             margin-top: 1rem;
@@ -367,68 +376,68 @@
         <!-- ! Descripciones -->
         <div class="scrollV" id="scrollV">
             <section class="product-content">
-                <div class="content bg-pink">
-                    <div class="content-description clamp">
-                        <article class="bg pink">
-                            <h1>Glazy Sweet</h1>
-                        </article>
-                        <article class="description">
-                            <div class="category">Clásicas</div>
-                            <h2 class="min-desc">Galceado rosa</h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laboriosam neque
-                                eveniet qui accusamus error magni repellat enim animi accusantium!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <div class="gc2">
-                                <div class="price">
-                                    <i class="icon-certificate"></i>
-                                    <span class="num">$100</span>
-                                </div>
-                                <a class="btn-primary" href="http://wa.me/+59898760446/"
-                                    title="Solicitá las tuyas por whatsapp" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-whatsapp"></i>
-                                    Hacé tu pedido
-                                </a>
+                <!-- <div class="content bg-pink"> -->
+                <div class="content-description clamp">
+                    <article class="bg pink">
+                        <h1 class="showTitleDonut">Glazy Sweet</h1>
+                    </article>
+                    <article class="description">
+                        <div class="category">Clásicas</div>
+                        <h2 class="min-desc">Galceado rosa</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laboriosam neque
+                            eveniet qui accusamus error magni repellat enim animi accusantium!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="gc2">
+                            <div class="price">
+                                <i class="icon-certificate"></i>
+                                <span class="num">$100</span>
                             </div>
-                        </article>
-                    </div>
+                            <a class="btn-primary" href="http://wa.me/+59898760446/"
+                                title="Solicitá las tuyas por whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-whatsapp"></i>
+                                Hacé tu pedido
+                            </a>
+                        </div>
+                    </article>
                 </div>
+                <!-- </div> -->
+            </section>
+            <section class="product-content">
+                <!-- <div class="content"> -->
+                <div class="content-description clamp">
+                    <article class="bg brown">
+                        <h1 class="showTitleDonut">Chipsy</h1>
+                    </article>
+                    <article class="description">
+                        <div class="category">Clásicas</div>
+                        <h2 class="min-desc">Chocolate + chips de azúcar<br></h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laboriosam neque
+                            eveniet qui accusamus error magni repellat enim animi accusantium!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="gc2">
+                            <div class="price">
+                                <i class="icon-certificate"></i>
+                                <span class="num">$100</span>
+                            </div>
+                            <a class="btn-primary" href="http://wa.me/+59898760446/"
+                                title="Solicitá las tuyas por whatsapp" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-whatsapp"></i>
+                                Hacé tu pedido
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <!-- </div> -->
             </section>
             <section class="product-content">
                 <div class="content">
                     <div class="content-description clamp">
-                        <article class="bg brown">
-                            <h1>Chipsy</h1>
-                        </article>
-                        <article class="description">
-                            <div class="category">Clásicas</div>
-                            <h2 class="min-desc">Chocolate + chips de azúcar<br></h2>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laboriosam neque
-                                eveniet qui accusamus error magni repellat enim animi accusantium!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <div class="gc2">
-                                <div class="price">
-                                    <i class="icon-certificate"></i>
-                                    <span class="num">$100</span>
-                                </div>
-                                <a class="btn-primary" href="http://wa.me/+59898760446/"
-                                    title="Solicitá las tuyas por whatsapp" target="_blank" rel="noopener noreferrer">
-                                    <i class="icon-whatsapp"></i>
-                                    Hacé tu pedido
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section class="product-content">
-                <div class="content">
-                    <div class="content-description clamp">
                         <article class="bg pink">
-                            <h1>Pink Crunch</h1>
+                            <h1 class="showTitleDonut">Pink Crunch</h1>
                         </article>
                         <article class="description">
                             <div class="category">Especiales</div>
@@ -453,12 +462,11 @@
                     </div>
                 </div>
             </section>
-
             <section class="product-content">
                 <div class="content">
                     <div class="content-description clamp">
                         <article class="bg black">
-                            <h1>Galáctica</h1>
+                            <h1 class="showTitleDonut">Galáctica</h1>
                         </article>
                         <article class="description">
                             <div class="category">Clásicas</div>
@@ -487,7 +495,7 @@
                 <div class="content">
                     <div class="content-description clamp">
                         <article class="bg brown">
-                            <h1>Jelly chips</h1>
+                            <h1 class="showTitleDonut">Jelly chips</h1>
                         </article>
                         <article class="description">
                             <div class="category">Clásicas</div>
@@ -516,7 +524,7 @@
                 <div class="content">
                     <div class="content-description clamp">
                         <article class="bg brown">
-                            <h1>Mediterranea</h1>
+                            <h1 class="showTitleDonut">Mediterranea</h1>
                         </article>
                         <article class="description">
                             <div class="category">Clásicas</div>
@@ -545,7 +553,7 @@
                 <div class="content">
                     <div class="content-description clamp">
                         <article class="bg white">
-                            <h1>Almonds</h1>
+                            <h1 class="showTitleDonut">Almonds</h1>
                         </article>
                         <article class="description">
                             <div class="category">Especiales</div>
@@ -574,7 +582,7 @@
                 <div class="content">
                     <div class="content-description clamp">
                         <article class="bg brown">
-                            <h1>Tentación</h1>
+                            <h1 class="showTitleDonut">Tentación</h1>
                         </article>
                         <article class="description">
                             <div class="category">Especiales</div>
@@ -603,7 +611,7 @@
                 <div class="content">
                     <div class="content-description clamp">
                         <article class="bg brown">
-                            <h1>Orión</h1>
+                            <h1 class="showTitleDonut">Orión</h1>
                         </article>
                         <article class="description">
                             <div class="category">Especiales</div>
