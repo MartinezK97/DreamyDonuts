@@ -1,0 +1,191 @@
+#content-all {
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    scroll-snap-type: y mandatory;
+    scroll-timeline: --allContent;
+}
+
+.product-content .showTitleDonut,
+.product-content .category,
+.product-content .min-desc,
+.product-content .description p,
+.product-content .price,
+.product-content .btn-primary {
+    animation-timeline: --allContent;
+    /* animation-name: slideToRight; */
+    animation-fill-mode: both;
+    animation-duration: 1ms;
+    animation-timing-function: linear;
+}
+
+
+.product-content .showTitleDonut {
+    animation-name: slideToRight;
+}
+
+.min-desc {
+    animation-name: grow;
+}
+
+.category {
+    animation-name: showTag;
+}
+
+.description p {
+    animation-name: showDesc;
+}
+
+.price {
+    animation-name: showPrice;
+}
+
+.product-content .btn-primary {
+    animation-name: showCTA;
+}
+
+.product-content:nth-child(1) .showTitleDonut,
+.product-content:nth-child(1) .category,
+.product-content:nth-child(1) .min-desc,
+.product-content:nth-child(1) .description p,
+.product-content:nth-child(1) .price,
+.product-content:nth-child(1) .btn-primary {
+    animation-range: entry 0% cover 10%;
+}
+
+.product-content:nth-child(2) .showTitleDonut,
+.product-content:nth-child(2) .category,
+.product-content:nth-child(2) .min-desc,
+.product-content:nth-child(2) .description p,
+.product-content:nth-child(2) .price,
+.product-content:nth-child(2) .btn-primary {
+    animation-range: entry 10% cover 20%;
+}
+
+.product-content:nth-child(3) .showTitleDonut,
+.product-content:nth-child(3) .category,
+.product-content:nth-child(3) .min-desc,
+.product-content:nth-child(3) .description p,
+.product-content:nth-child(3) .price,
+.product-content:nth-child(3) .btn-primary {
+    animation-range: entry 20% cover 30%;
+}
+
+.product-content:nth-child(4) .showTitleDonut,
+.product-content:nth-child(4) .category,
+.product-content:nth-child(4) .min-desc,
+.product-content:nth-child(4) .description p,
+.product-content:nth-child(4) .price,
+.product-content:nth-child(4) .btn-primary {
+    animation-range: entry 30% cover 40%;
+}
+
+.product-content:nth-child(5) .showTitleDonut,
+.product-content:nth-child(5) .category,
+.product-content:nth-child(5) .min-desc,
+.product-content:nth-child(5) .description p,
+.product-content:nth-child(5) .price,
+.product-content:nth-child(5) .btn-primary {
+    animation-range: entry 40% cover 50%;
+}
+
+.product-content:nth-child(6) .showTitleDonut,
+.product-content:nth-child(6) .category,
+.product-content:nth-child(6) .min-desc,
+.product-content:nth-child(6) .description p,
+.product-content:nth-child(6) .price,
+.product-content:nth-child(6) .btn-primary {
+    animation-range: entry 50% cover 60%;
+}
+
+.product-content:nth-child(7) .showTitleDonut,
+.product-content:nth-child(7) .category,
+.product-content:nth-child(7) .min-desc,
+.product-content:nth-child(7) .description p,
+.product-content:nth-child(7) .price,
+.product-content:nth-child(7) .btn-primary {
+    animation-range: entry 60% cover 70%;
+}
+
+.product-content:nth-child(8) .showTitleDonut,
+.product-content:nth-child(8) .category,
+.product-content:nth-child(8) .min-desc,
+.product-content:nth-child(8) .description p,
+.product-content:nth-child(8) .price,
+.product-content:nth-child(8) .btn-primary {
+    animation-range: entry 70% cover 80%;
+}
+
+.product-content:nth-child(9) .showTitleDonut,
+.product-content:nth-child(9) .category,
+.product-content:nth-child(9) .min-desc,
+.product-content:nth-child(9) .description p,
+.product-content:nth-child(9) .price,
+.product-content:nth-child(9) .btn-primary {
+    animation-range: entry 80% cover 90%;
+}
+
+@keyframes grow {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes showTag {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes showDesc {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showPrice {
+    from {
+        opacity: 0;
+        transform: translate(-100%, 100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes showCTA {
+    from {
+        opacity: 0;
+        transform: translate(100%, 100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

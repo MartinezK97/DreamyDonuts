@@ -70,17 +70,14 @@
         ../assets/img/promos/portada.webp 480w,
         ../assets/img/promos/portada-desktop.webp 1024w" 
         sizes="100vw"> -->
-        <link rel="preload" 
-        as="image" 
-        href="../assets/img/promos/portada-desktop.webp"
-        **media="(min-width: 1024px)"**> <!-- Desktop -->
-  
-  <link rel="preload" 
-        as="image" 
-        href="../assets/img/promos/portada.webp"
-        **media="(max-width: 480px)"**> <!-- Mobile -->
+    <link rel="preload" as="image" href="../assets/img/promos/portada-desktop.webp" **media="(min-width: 1024px)" **>
+    <!-- Desktop -->
 
-    <link rel="preload" href="../assets/fonts/SourGummy/SourGummy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="../assets/img/promos/portada.webp" **media="(max-width: 480px)" **>
+    <!-- Mobile -->
+
+    <link rel="preload" href="../assets/fonts/SourGummy/SourGummy-Regular.woff2" as="font" type="font/woff2"
+        crossorigin>
     <link rel="preload" href="../assets/fonts/Pattaya/Pattaya-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Schema.org Optimizado para Uruguay -->
     <script type="application/ld+json">
@@ -196,6 +193,7 @@
         #menu.hide {
             transform: translateX(100%)
         }
+
         /* Botón de menú */
         .btn-menu {
             font-size: 2rem;
@@ -210,15 +208,16 @@
             background-image: url(../assets/img/promos/portada.webp);
             background-size: cover;
             background-attachment: fixed;
-            position:relative;
+            position: relative;
         }
-    .portada:before{
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: #0005;
-        z-index:0;
-    }
+
+        .portada:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: #0005;
+            z-index: 0;
+        }
 
 
         .glass {
@@ -228,18 +227,19 @@
             border-radius: 10px;
             padding: 2rem;
             margin: 0 auto;
-            background:#fff;
-            z-index:1;
-            border:solid 1px#0002;
+            background: #fff;
+            z-index: 1;
+            border: solid 1px#0002;
         }
 
         .glass h1 {
             margin: 1rem auto;
             color: var(--primary);
             text-shadow: none;
-            font-size:2.5rem;
+            font-size: 2.5rem;
         }
-        .glass h2{
+
+        .glass h2 {
             font-size: 1.5rem;
         }
 
@@ -251,11 +251,11 @@
             position: relative;
         }
 
-        .glass a{
-            padding:0.5rem 2rem;
+        .glass a {
+            padding: 0.5rem 2rem;
             display: block;
-            margin:1rem auto;
-            font-size:1.25rem;
+            margin: 1rem auto;
+            font-size: 1.25rem;
         }
 
         .glass p.promo:before {
@@ -359,8 +359,10 @@
 <body>
 
     <div id="all-content">
-        <img src="../assets/img/promos/portada-desktop.webp" alt="" aria-hidden="true" fetchpriority="high" style="display: none;">
-                <img src="../assets/img/promos/portada.webp" alt="" aria-hidden="true" fetchpriority="high" style="display: none;">
+        <img src="../assets/img/promos/portada-desktop.webp" alt="" aria-hidden="true" fetchpriority="high"
+            style="display: none;">
+        <img src="../assets/img/promos/portada.webp" alt="" aria-hidden="true" fetchpriority="high"
+            style="display: none;">
         <!-- ! Header -->
         <div class="header">
             <a href="../" class="home" title="Ir al inicio">
@@ -392,7 +394,8 @@
         <div id="menu" class="menu hide">
             <button class="btn-menu fz-2 maxw-max"><i class="icon-bars" title="Abrir menú desplazable"></i></button>
             <a href="../" title="Ir al inicio"><i class="icon-home"></i> Inicio</a>
-            <a href="#promo1" class="color-primary" title="Ir al inicio"><i class="icon-donut_primary"></i> Promociones</a>
+            <a href="#promo1" class="color-primary" title="Ir al inicio"><i class="icon-donut_primary"></i>
+                Promociones</a>
             <a href="../nosotros" title="Conocé quien está detrás"><i class="icon-users"></i> Nosotros</a>
             <a href="#contactos" title="Ir al inicio"><i class="icon-envelope"></i> Contactos</a>
         </div>
@@ -417,7 +420,9 @@
                     </h2>
                     <p class="promo promo1">20% OFF con el código #DREAMY20</p>
                     <p class="promo promo2">Llevando el Pack Goloso, 10% OFF en tu próxima compra</p>
-                    <a href="#promo1" title="Ver promociones" class="btn-primary cta">Ver promociones</a>
+                    <a href="#promo1" title="Ver promociones" class="btn-primary cta"><i class="icon-arrow-down"></i>
+                        Ver
+                        promociones</a>
                 </div>
             </article>
 

@@ -1,3 +1,137 @@
+/*! *** Pantallas horizontales ****/
+
+@media screen and (min-height:840px) and (min-width:1400px) {
+    :root {
+        --size: 400px;
+    }
+
+    /*** Menu desplazable ***/
+    #menu {
+        display: none;
+    }
+
+    .header {
+        background: transparent !important;
+    }
+
+    #portada h1 {
+        max-width: 1100px;
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    #portada a.cta {
+        font-size: 1.75rem;
+        padding: 0.75rem 2rem;
+    }
+
+    /*** Slider de donas ***/
+    .product,
+    .product img,
+    .scrollH {
+        height: var(--size);
+        min-height: var(--size);
+        max-height: var(--size);
+    }
+
+    .scrollH {
+        height: var(--size);
+        max-height: var(--size);
+        min-height: var(--size);
+    }
+
+    .product img {
+        width: var(--size);
+        min-width: var(--size);
+        max-width: var(--size);
+        transform-origin: 50% 50%;
+    }
+
+
+
+    /*** Descripciones ***/
+
+    #scrollV {
+        margin: 0 auto;
+    }
+
+    .product-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .showTitleDonut {
+        font-size: 4rem;
+        padding: 1.75rem 0;
+        margin: 25vh 0 auto auto;
+        right: 0;
+        border: solid 1px green;
+        max-width: 700px;
+        text-align: left;
+
+    }
+
+    .content-products {
+        top: calc(var(--header-height) + 5rem);
+        border: solid 1px;
+        width: 1200px;
+    }
+
+    .description {
+        width: 700px;
+        margin: -5rem 1rem 0 auto;
+    }
+
+    .bg {
+        border-radius: 0 0 50px 50px;
+        background-attachment: fixed;
+    }
+
+    .category {
+        font-size: 1rem;
+    }
+
+    .min-desc {
+        font-size: 2.75rem
+    }
+
+    .description p {
+        line-height: 1.5;
+        font-size: 1.5rem
+    }
+
+    .description a {
+        padding: .75rem 2rem;
+        font-size: 1.25rem
+    }
+
+    /*** Footer ****/
+    .footer {
+        min-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location {
+        grid-row: 1/3;
+        grid-column: 2/3;
+    }
+
+    .footer .contactos .title {
+        font-size: 1.25rem
+    }
+
+    .footer .contactos p {
+        font-size: .9rem
+    }
+
+    .footer .contactos a {
+        font-size: 1rem
+    }
+}
+
+/*!--- Pantallas verticales ----*/
+/* 
 @media screen and (max-height:750px) {
     #portada h1 {
         font-size: 2.25rem
@@ -14,7 +148,7 @@
     }
 
     .content-description .bg {
-        height: calc(8rem + 25dvh)
+        height: calc(60dvh)
     }
 
     .content-description .min-desc {
@@ -341,4 +475,4 @@
     .content-description .description a {
         font-size: 1.5rem !important
     }
-}
+} */
