@@ -1,0 +1,100 @@
+:root {
+    /*! General */
+    --primary: #ffc90e;
+    --secondary: #f0d1b0;
+    --titles-color: #5b3813;
+    --body-background: rgb(252, 245, 219);
+
+    /*! Header */
+    /* Altura del header*/
+    --header-height: 3rem;
+    /* Tamaño de fuente del header */
+    --header-brandname-font-size: 1.25rem;
+    /* Tamaño de fuente del header*/
+    --header-logo-size: 1.5rem;
+    /* Visibilidad del menu del header */
+    --header-navbar-display: none;
+
+
+    /*! Portada */
+    /* Tamaño de fuente de la portada */
+    --hero-font-size: 2.5rem;
+    /*Padding del titulo de portada*/
+    --pad-hero-title: 1rem 1.5rem;
+
+    /*Tamaño de fuente del CTA*/
+    --hero-cta-font-size: 1rem;
+    /* Padding del CTA */
+    --hero-cta-pad: 1rem 1.5rem;
+
+
+    /*! Menu */
+    /* Visibilidad del menu*/
+    --menu-display: grid;
+    /* Tamaño de fuente del icono hamburguesa */
+    --icon-font-size: 1.75rem;
+    /* Posicion del icono respeto del top */
+    --icon-top: 0.25rem;
+    /* Posicion del icono respeto del right */
+    --icon-right: 0.5rem;
+
+    /*! TRAPECIO*/
+    /* Visibilidad del trapecio*/
+    --trapecio-display: none;
+    /* Tamaño del triangulo */
+    --triangle-width: 200px;
+
+
+    /*! NAVBAR BUTTONS*/
+    /* Visibilidad de los botones  Anterior|Siguiente */
+    --navbar-display: none;
+    /* Tamaño de fuente de los botones */
+    --navbar-buttons-font-size: 1rem;
+    /* Distancia del borde inferior */
+    --navbar-buttons-bottom-position: 1rem;
+    /* Distancia del borde derecho */
+    --navbar-buttons-right-position: 1rem;
+
+    /*! Slider horizontal*/
+    /* Posicion del titulo respecto del borde superior */
+    --donut-title-top-position: 3rem;
+    /* Posicion del slider respecto del borde superior */
+    --slider-top-position: 6rem;
+    --img-margin: 0 auto;
+    --size: 33vh;
+
+    /*! Descripciones */
+    --donut-title-font-size: 2rem;
+
+    --description-rows: 60vh 40vh;
+    --description-columns: 1fr;
+    --description-height: 50vh;
+    --description-radius: 25px;
+    --description-top-position: -50px;
+    --description-title-font-size: 2rem 1rem 0;
+    --description-pad: 1rem;
+    --description-font-size: 0.85rem;
+    --description-shadow: 0 0 15px -5px #0005;
+    --category-font-size: 0.6rem;
+    --category-right-position: 30px;
+    --description-cta-pad: 0.5rem 1rem;
+    --description-cta-font-size: 1rem;
+    --price-size: 3rem;
+    --price-icon-font-size: 3rem;
+    --price-font-size: 1rem;
+
+    /*! Sabores */
+    --flavos-display: none;
+    /*! Footer */
+    --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+    --footer-box-title-size: 1rem;
+    --footer-contactos-tel-size: 1rem;
+
+    --contactos-gap: 0.5rem;
+    --contactos-num-font-size: 0.85rem;
+
+    --rrss-gap: 0.5rem;
+    --rrss-pad: 0.5rem 0;
+
+    --location-height: calc(100dvh - 23.25rem);
+}

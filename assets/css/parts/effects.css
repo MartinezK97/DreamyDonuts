@@ -1,0 +1,118 @@
+#content-all {
+    scroll-timeline: --allContent;
+}
+
+.product-content .description,
+.product-content .showTitleDonut,
+.product-content .category,
+.product-content .min-desc,
+.product-content .description p,
+.product-content .price,
+.product-content .btn-primary {
+    animation-timeline: --allContent;
+    /* animation-name: slideToRight; */
+    animation-fill-mode: both;
+    animation-duration: 1ms;
+    animation-timing-function: linear;
+}
+
+.description {
+    animation-name: showDescription;
+
+}
+
+
+.product-content .showTitleDonut {
+    animation-name: showDescription;
+}
+
+.min-desc {
+    animation-name: grow;
+}
+
+.category {
+    animation-name: showTag;
+}
+
+.description p {
+    animation-name: showDesc;
+}
+
+.price {
+    animation-name: showPrice;
+}
+
+.product-content .btn-primary {
+    animation-name: showCTA;
+}
+
+.product-content:nth-child(1) .description,
+.product-content:nth-child(1) .showTitleDonut {
+    animation-range: entry 0% cover calc((100% / 12) * 2);
+}
+
+.product-content:nth-child(2) .description,
+.product-content:nth-child(2) .showTitleDonut {
+    animation-range: entry calc((100% / 12)) cover calc((100% / 12) * 3);
+}
+
+.product-content:nth-child(3) .description,
+.product-content:nth-child(3) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 2) cover calc((100% / 12) * 4);
+}
+
+.product-content:nth-child(4) .description,
+.product-content:nth-child(4) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 3) cover calc((100% / 12) * 5);
+}
+
+.product-content:nth-child(5) .description,
+.product-content:nth-child(5) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 4) cover calc((100% / 12) * 6);
+}
+
+.product-content:nth-child(6) .description,
+.product-content:nth-child(6) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 5) cover calc((100% / 12) * 7);
+}
+
+.product-content:nth-child(7) .description,
+.product-content:nth-child(7) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 6) cover calc((100% / 12) * 8);
+}
+
+.product-content:nth-child(8) .description,
+.product-content:nth-child(8) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 7) cover calc((100% / 12) * 9);
+}
+
+.product-content:nth-child(9) .description,
+.product-content:nth-child(9) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 8) cover calc((100% / 12) * 10);
+}
+
+.product-content:nth-child(10) .description,
+.product-content:nth-child(10) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 9) cover calc((100% / 12) * 11);
+}
+
+.product-content:nth-child(11) .description,
+.product-content:nth-child(11) .showTitleDonut {
+    animation-range: entry calc((100% / 12) * 10) cover calc((100% / 12) * 12);
+}
+
+@keyframes showDescription {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+@keyframes showTitle {}

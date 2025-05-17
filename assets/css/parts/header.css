@@ -1,0 +1,111 @@
+.header {
+    background: #5b3813;
+    backdrop-filter: blur(5px);
+    /* box-shadow: 0 0 10px -4px #0007; */
+    width: 100vw;
+    height: var(--header-height);
+    left: 0;
+    z-index: 9999999999999999999;
+    grid-template-columns: max-content auto;
+    position: fixed;
+    top: 0;
+    grid-gap: 1rem;
+    padding: 1rem;
+    align-content: center;
+}
+
+.header .logo img {
+    width: 3rem;
+    height: 3rem
+}
+
+.header nav {
+    align-items: center;
+    height: min-content;
+    grid-gap: var(--header-logo-gap);
+    max-height: max-content;
+    margin: auto 1rem auto auto;
+    grid-template-columns: repeat(4, max-content);
+    display: var(--header-navbar-display);
+}
+
+.header,
+.header .home {
+    display: grid;
+}
+
+.btn-contactos {
+    background: var(--secondary);
+    padding: .5rem 2rem;
+    height: min-content;
+    color: var(--titles-color) !important;
+    border-radius: 100px
+}
+
+.header nav a {
+    color: #fff;
+    display: inline-grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5rem;
+    align-items: center;
+    align-content: center;
+    min-width: max-content;
+    font-size: 1.35rem;
+    transition: 0.3s ease;
+}
+
+.header nav a:not(.btn-contactos):hover {
+    color: var(--primary);
+    transform: scale(1.05);
+}
+
+.header nav a span {
+    display: block;
+}
+
+.header nav a i {
+    font-size: 80%;
+    align-self: center;
+    margin: 0;
+    display: block;
+}
+
+.header .brand-name {
+    font-family: Pattaya;
+    color: var(--primary)
+}
+
+.header .home img {
+    width: var(--header-logo-size);
+    height: var(--header-logo-size);
+}
+
+.header .home {
+    grid-template-columns: min-content auto;
+    grid-gap: 1rem;
+    font-size: var(--header-brandname-font-size);
+    align-items: center
+}
+
+.header .logo img {
+    width: 3rem;
+    height: 3rem
+}
+
+.header .home {
+    color: var(--primary)
+}
+
+.btn-contactos {
+    background: var(--secondary);
+    padding: .5rem 2rem;
+    height: min-content;
+    color: var(--titles-color) !important;
+    border-radius: 100px;
+    transition: 0.25s ease-in-out;
+}
+
+.btn-contactos:hover,
+.btn-contactos:active {
+    background-color: var(--primary);
+}

@@ -1,0 +1,111 @@
+#flavors {
+    position: fixed;
+    bottom: 1rem;
+    color: var(--titles-color);
+    right: 2rem;
+    z-index: 4;
+    display: var(--flavors-display);
+    grid-template-columns: repeat(11, 1fr);
+    /* display: flex; */
+    gap: 5px;
+    width: calc(100vw - 4rem);
+    box-shadow: 0 0 10px -4px #0005;
+    background-color: #fff2;
+    border-radius: 5px;
+    padding: var(--flavors-pad);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 50px;
+    overflow-x: scroll;
+    transition: 0.3s ease;
+}
+
+#flavors:hover {
+    transform: scale(1.035);
+    box-shadow: 0 0 10px -3px #0008;
+}
+
+#flavors a {
+    font-size: var(--flavors-font-size);
+    text-align: center;
+    cursor: pointer;
+    color: var(--titles-color);
+    display: block;
+    position: relative;
+    display: inline-block;
+    padding: var(--flavors-text-pad);
+    margin: 4px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-radius: 30px;
+    border: solid 1px #fff0;
+    overflow: hidden;
+    min-width: max-content;
+}
+
+#flavors a:hover {
+    color: var(--titles-color);
+    border: solid 1px;
+}
+
+#flavors a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+#flavors a.active::after {
+    transform: scaleX(1);
+}
+
+/* #flavors a {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    margin: 4px;
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+    transition: color 0.3s ease;
+} */
+
+#flavors a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary);
+    color: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+
+
+#flavors a {
+    margin: 5px 0;
+    padding: 8px 15px !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#flavors a.active {
+    transform: scale(1);
+    box-shadow: 0 0 5px #0005;
+    color: var(--titles-color);
+    border: solid 1px #fff;
+    box-shadow: 0 0 10px #0005;
+}

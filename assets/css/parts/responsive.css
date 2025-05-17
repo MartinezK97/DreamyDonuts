@@ -1,0 +1,1181 @@
+/*! *** Pantallas horizontales ****/
+
+/*
+* width:    1680 a 1919;
+* height:    820 a  980;
+*/
+@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 920px) and (max-height: 1024px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px red;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 4rem;
+        --header-brandname-font-size: 2.125rem;
+        --header-logo-size: 2.5rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: grid;
+
+        /* Portada */
+        --hero-title-font-size: 6rem;
+        --hero-title-pad: 1rem 15rem;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 2rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(2.75rem, 7.5vh, 4rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 calc((50vw - 450px) / 3);
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 3rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1.5rem, 3.75vh, 1.75rem);
+        --description-cta-font-size: 1.5rem;
+        --description-cta-pad: 0.75rem 2rem;
+        --description-text-pad: 1rem 3rem;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 17.5vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 1.25rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 7.05vw);
+        --category-top-value: 75;
+        --category-top-position: 70vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 4rem;
+        --price-icon-font-size: 4rem;
+        --price-font-size: 1.25rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 1rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+
+/*
+* width:    1680 a 1919;
+* height:    780 a  919;
+*/
+@media (min-width: 1680px) and (max-width: 1920px) and (min-height: 780px) and (max-height: 919px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px fuchsia;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 4rem;
+        --header-brandname-font-size: 2.125rem;
+        --header-logo-size: 2.5rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: grid;
+
+        /* Portada */
+        --hero-title-font-size: 5rem;
+        --hero-title-pad: 1rem 15rem;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 2rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(2.75rem, 7.5vh, 4rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 calc((50vw - 450px) / 3);
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 3rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1.5rem, 3.75vh, 1.75rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.75rem 3rem;
+        --description-text-pad: 1rem 3rem;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 17.5vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 1.25rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 7.05vw);
+        --category-top-position: 70vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 4rem;
+        --price-icon-font-size: 4rem;
+        --price-font-size: 1.25rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 1rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+
+
+/*
+* width:    1440 a 1679;
+* height:    780 a  919;
+*/
+@media (min-width: 1440px) and (max-width: 1679px) and (min-height: 780px) and (max-height: 919px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px blue;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 4rem;
+        --header-brandname-font-size: 2.125rem;
+        --header-logo-size: 2.5rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: grid;
+
+        /* Portada */
+        --hero-title-font-size: 5rem;
+        --hero-title-pad: 1rem 15rem;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 2rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(2.75rem, 7.5vh, 4rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 calc((50vw - 450px) / 3);
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 3rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1.5rem, 3.75vh, 1.75rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.75rem 3rem;
+        --description-text-pad: 1rem 3rem;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 17.5vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 1.25rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 7.05vw);
+        --category-top-position: 70vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 4rem;
+        --price-icon-font-size: 4rem;
+        --price-font-size: 1.25rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 1rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+/*
+* width:    1440 a 1679
+* height:    620 a  780
+*/
+@media (min-width: 1280px) and (max-width:1439px) and (min-height: 620px) and (max-height: 780px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px cyan;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 4rem;
+        --header-brandname-font-size: 2rem;
+        --header-logo-size: 2.25rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: grid;
+
+        /* Portada */
+        --hero-title-font-size: 3.75rem;
+        --hero-title-pad: 1rem 10rem;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 1.5rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(2rem, 4.5vh, 3.5rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 calc((50vw - 450px) / 3);
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 3rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1.5rem, 3vh, 1.75rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.75rem 3rem;
+        --description-text-pad: 1rem 3rem;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 17.5vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.9rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 7.05vw);
+        --category-top-position: 70vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.75rem;
+        --price-icon-font-size: 3.75rem;
+        --price-font-size: 1rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 1rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+
+/*
+* width:    1440 a 1679
+* height:    620 a  780
+*/
+@media (min-width: 820px) and (max-width:1024px) and (min-height: 990px) and (max-height: 1370px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px cyan;
+    }
+
+    .category {
+        display: none;
+    }
+
+    #scollV,
+    #scrollH {
+        z-index: 3;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 6rem;
+        --header-brandname-font-size: 2.5rem;
+        --header-logo-size: 2.5rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: none;
+
+        /* Portada */
+        --hero-title-font-size: 4.75rem;
+        --hero-title-pad: 1rem 5rem;
+        --hero-title-align-text: left;
+        --hero-title-width: 85%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 2.5rem;
+        --hero-cta-pad: 1rem 4rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 40vh;
+        --donut-title-font-size: clamp(2rem, 4.5vh, 3.5rem);
+        --donut-title-top-position: 10vh;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 25vh;
+        --img-margin: 0 calc((50vw - 450px) / 3);
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 3rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1.5rem, 2vh, 1.75rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.75rem 1rem;
+        --description-text-pad: 1rem 0;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 0;
+        --product-columns: 55vw 45vw;
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.9rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 7.05vw);
+        --category-top-position: 70vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.75rem;
+        --price-icon-font-size: 3.75rem;
+        --price-font-size: 1rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 2.5rem;
+        --navbar-buttons-bottom-position: 25vh;
+        --navbar-buttons-right-position: 2rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+@media (min-width: 620px) and (max-width:819px) and (min-height: 320px) and (max-height: 720px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px cyan;
+    }
+
+
+    #scollV,
+    #scrollH {
+        z-index: 3;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 4rem;
+        --header-brandname-font-size: 2rem;
+        --header-logo-size: 2.25rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: none;
+
+        /* Portada */
+        --hero-title-font-size: 3.75rem;
+        --hero-title-pad: 1rem 5rem;
+        --hero-title-align-text: left;
+        --hero-title-width: 85%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 2rem;
+        --hero-cta-pad: 0.75rem 4rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 40vh;
+        --donut-title-font-size: clamp(2rem, 4.5vh, 3.5rem);
+        --donut-title-top-position: 5rem;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 25vh;
+        --img-margin: 0 auto 0 5vw;
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 2rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1rem, 3vh, 1.5rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.75rem 1rem;
+        --description-text-pad: 1rem 0;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 10vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.9rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 8vw);
+        --category-top-position: 75vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.75rem;
+        --price-icon-font-size: 3.75rem;
+        --price-font-size: 1rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 2.5rem;
+        --navbar-buttons-bottom-position: 25vh;
+        --navbar-buttons-right-position: 2rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+/*
+* width:    1440 a 1679
+* height:    620 a  780
+*/
+@media (min-width: 980px) and (max-width:1279px) and (min-height: 490px) and (max-height: 620px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px gray;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 3.25rem;
+        --header-brandname-font-size: 1.75rem;
+        --header-logo-size: 2rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: grid;
+
+        /* Portada */
+        --hero-title-font-size: 3rem;
+        --hero-title-pad: 1rem 5vw;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 1.5rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: none;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(2rem, 4.5vh, 3.5rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 3rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 auto 0 7vw;
+
+        /* Sabores */
+        --flavors-display: grid;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: clamp(1.75rem, 5vh, 3rem);
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1rem, 3vh, 1.5rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.5rem 2rem;
+        --description-text-pad: 1rem 3rem;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 17.5vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.9rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 7.05vw);
+        --category-top-position: 70vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.75rem;
+        --price-icon-font-size: 3.75rem;
+        --price-font-size: 1rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 1rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+@media (min-width: 690px) and (max-width:979px) and (min-height: 390px) and (max-height: 490px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px purple;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 3rem;
+        --header-brandname-font-size: 1.5rem;
+        --header-logo-size: 2rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: none;
+
+        /* Portada */
+        --hero-title-font-size: 3rem;
+        --hero-title-pad: 1rem 5vw;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 1.5rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: grid;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(1.5rem, 3vh, 3rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 2rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 auto 0 clamp(1rem, 5vw, 4rem);
+
+        /* Sabores */
+        --flavors-display: grid;
+        --flavors-font-size: 0.75rem;
+        --flavors-pad: 2px 0.5rem;
+        --flavors-text-pad: 2px 1rem;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: 1.5rem;
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1rem, 2vh, 1.5rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.5rem 2rem;
+        --description-text-pad: 0.5rem 0;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 14vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.8rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 6.75vw);
+        --category-top-position: 65vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.25rem;
+        --price-icon-font-size: 3.25rem;
+        --price-font-size: 0.9rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 0.8rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+/*! MEDIA QUERYS PARA MOBILE*/
+@media (min-width: 520px) and (max-width:689px) and (min-height: 620px) and (max-height: 890px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px orange;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 3rem;
+        --header-brandname-font-size: 1.5rem;
+        --header-logo-size: 2rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: none;
+
+        /* Portada */
+        --hero-title-font-size: 3rem;
+        --hero-title-pad: 1rem 5vw;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 1.5rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: grid;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 55vh;
+        --donut-title-font-size: clamp(1.5rem, 3vh, 3rem);
+        --donut-title-top-position: 15vh;
+        --donut-title-pad: 0.75rem 2rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 auto 0 clamp(1rem, 5vw, 4rem);
+
+        /* Sabores */
+        --flavors-display: grid;
+        --flavors-font-size: 0.75rem;
+        --flavors-pad: 2px 0.5rem;
+        --flavors-text-pad: 2px 1rem;
+
+        /* Descripciones */
+        --description-rows: 100vh;
+        --description-shadow: none;
+        --description-top-position: 0px;
+        --description-title-font-size: 1.5rem;
+        --description-z-index: 3;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1rem, 2vh, 1.5rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.5rem 2rem;
+        --description-text-pad: 0.5rem 0;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 14vh;
+        --product-columns: repeat(2, 1fr);
+        --radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.8rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 6.75vw);
+        --category-top-position: 65vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.25rem;
+        --price-icon-font-size: 3.25rem;
+        --price-font-size: 0.9rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: block;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: grid;
+        --navbar-buttons-font-size: 0.8rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+
+@media (min-width: 390px) and (max-width:519px) and (min-height: 590px) and (max-height:850px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px black;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 4rem;
+        --header-brandname-font-size: 1.85rem;
+        --header-logo-size: 2.25rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: none;
+
+        /* Portada */
+        --hero-title-font-size: 3rem;
+        --hero-title-pad: 1rem 5vw;
+        --hero-title-align-text: left;
+        --hero-title-width: 70%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 1.5rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: grid;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 40vh;
+        --donut-title-font-size: clamp(1.5rem, 3vh, 3rem);
+        --donut-title-top-position: 5rem;
+        --donut-title-pad: 0.75rem 2rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 auto;
+
+        /* Sabores */
+        --flavors-display: none;
+        --flavors-font-size: 0.75rem;
+        --flavors-pad: 2px 0.5rem;
+        --flavors-text-pad: 2px 1rem;
+
+        /* Descripciones */
+        --description-rows: 55vh 45vh;
+        --description-shadow: 0 0 12px -3px #0007;
+        --description-top-position: 0px;
+        --description-title-font-size: 1.5rem;
+        --description-z-index: 1;
+        --description-pad: 2rem;
+        --description-font-size: clamp(1rem, 2vh, 1.5rem);
+        --description-cta-font-size: 1.25rem;
+        --description-cta-pad: 0.5rem 2rem;
+        --description-text-pad: 0.5rem 0;
+        --description-text-line-height: 1.25;
+        --description-title-top-position: 0;
+        --product-columns: 1fr;
+        --description-radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.8rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 6.75vw);
+        --category-top-position: 65vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3.25rem;
+        --price-icon-font-size: 3.25rem;
+        --price-font-size: 0.9rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: none;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: none;
+        --navbar-buttons-font-size: 0.8rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}
+
+@media (max-width: 389px) and (min-height: 590px) {
+
+    #portada,
+    #portada h1 {
+        /* color: green; */
+        border: solid 1px blue;
+    }
+
+    :root {
+        /* Header */
+        --header-height: 3rem;
+        --header-brandname-font-size: 1.85rem;
+        --header-logo-size: 2.25rem;
+        --header-logo-gap: 2rem;
+        --header-navbar-display: none;
+
+        /* Portada */
+        --hero-title-font-size: 2.5rem;
+        --hero-title-pad: 1rem 5vw;
+        --hero-title-align-text: left;
+        --hero-title-width: 100%;
+        --hero-subtitle-font-size: 75%;
+        --hero-cta-font-size: 1.5rem;
+        --hero-cta-pad: 0.75rem 3rem;
+
+        /* Menu */
+        --menu-display: grid;
+        --icon-font-size: 1.75rem;
+        --icon-top: 0.25rem;
+        --icon-right: 0.5rem;
+
+        /* Slider horizontal */
+        --size: 40vh;
+        --donut-title-font-size: clamp(1.5rem, 3vh, 3rem);
+        --donut-title-top-position: 4rem;
+        --donut-title-pad: 0.75rem 2rem;
+        --donut-title-backdrop: blur(10px);
+        --donut-title-shadow: 1px 0 10px #0005;
+        --slider-top-position: 17.5vh;
+        --img-margin: 0 auto;
+
+        /* Sabores */
+        --flavors-display: none;
+        --flavors-font-size: 0.75rem;
+        --flavors-pad: 2px 0.5rem;
+        --flavors-text-pad: 2px 1rem;
+
+        /* Descripciones */
+        --description-rows: 55vh 45vh;
+        --description-shadow: 0 0 12px -3px #0007;
+        --description-top-position: 0px;
+        --description-title-font-size: 1.25rem;
+        --description-z-index: 1;
+        --description-pad: 2rem;
+        --description-font-size: 0.9rem;
+        --description-cta-font-size: 1.2rem;
+        --description-cta-pad: 0.5rem 1rem;
+        --description-text-pad: 0.25rem 0;
+        --description-text-line-height: 1.1;
+        --description-title-top-position: 30px;
+        --product-columns: 1fr;
+        --description-radius: 50px;
+
+        /* Categoría */
+        --category-font-size: 0.8rem;
+        --category-right-position: auto;
+        --category-left-position: calc(-1rem - 6.75vw);
+        --category-top-position: 65vh;
+        --category-pad: 0.5rem 1rem;
+
+        /* Precio */
+        --price-size: 3rem;
+        --price-icon-font-size: 3rem;
+        --price-font-size: 0.8rem;
+
+        /* Contactos */
+        --contactos-gap: 0.5rem;
+        --contactos-num-font-size: 0.85rem;
+
+        /* Redes Sociales */
+        --rrss-gap: 0.5rem;
+        --rrss-pad: 0.5rem 0;
+
+        /* Ubicación */
+        --location-height: calc(100dvh - 23.25rem);
+
+        /* Trapecio */
+        --trapecio-display: none;
+        --triangle-width: 10vw;
+
+        /* Navbar Buttons */
+        --navbar-display: none;
+        --navbar-buttons-font-size: 0.8rem;
+        --navbar-buttons-bottom-position: 15vh;
+        --navbar-buttons-right-position: 1rem;
+
+        /* Footer */
+        --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+        --footer-box-title-size: 1rem;
+        --footer-contactos-tel-size: 1rem;
+        --footer-created-by-font-size: 1.25rem;
+        --footer-created-by-pad: 0.5rem 0;
+    }
+}

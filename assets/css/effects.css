@@ -1,7 +1,4 @@
 #content-all {
-    overflow-y: scroll;
-    flex-wrap: wrap;
-    scroll-snap-type: y mandatory;
     scroll-timeline: --allContent;
 }
 

@@ -1,0 +1,17 @@
+{
+    "donuts": [
+        {
+            "name": "Glazsweet",
+            "background": "pink",
+            "picture": "glazysweet.webp",
+            "categoty": "clásicas",
+            "title": "Glaseado rosa",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            "price": "100"
+        }
+    ],
+    "brand": {
+        "name": "Dreamy Donuts",
+        "wpp": "+59898760446"
+    }
+}

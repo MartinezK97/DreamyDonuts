@@ -1,0 +1,179 @@
+:root {
+
+    /* Body */
+    --primary: #ffc90e;
+    --secondary: #f0d1b0;
+    --body-background: #fffbeb;
+    --titles-color: #5b3813;
+
+    /* Header */
+    --header-height: 5rem;
+    --header-brandname-font-size: 3rem;
+    --header-logo-size: 3rem;
+    --header-navbar-display: grid;
+
+    /* Portada */
+    --hero-font-size: 7rem;
+    --hero-title-pad: 1rem 10rem;
+    --hero-cta-font-size: 2.53rem;
+    --hero-cta-pad: 1rem;
+    --pad-hero-title: 1rem 1.5rem;
+
+    /* Menu */
+    --menu-display: none;
+    --icon-font-size: 1.75rem;
+    --icon-top: 0.25rem;
+    --icon-right: 0.5rem;
+
+    /* Slider horizontal */
+    --size: 450px;
+    --donut-title-font-size: 4rem;
+    --donut-title-top-position: 8rem;
+    --donut-title-pad: 1rem 3rem;
+    --donut-title-backdrop: blur(10px);
+    --donut-title-shadow: 1px 0 10px #0005;
+    --slider-top-position: calc((100vh - var(--size)) / 2);
+    --img-margin: 0 calc((50vw - 450px) / 3);
+
+    /* Sabores */
+    --flavors-display: grid;
+
+    /* Descripciones */
+    --description-rows: 100vh;
+    --product-columns: repeat(2, 1fr);
+    --description-shadow: none;
+    --radius: 50px;
+    --description-top-position: 0px;
+    --description-title-font-size: 3rem;
+    --description-z-index: 3;
+    --description-pad: 2rem;
+    --description-font-size: 1.75rem;
+    --description-cta-font-size: 1.75rem;
+    --description-cta-pad: 1rem 2rem;
+    --description-text-pad: 1rem;
+    --description-text-line-height: 1.5;
+
+    /* Categoría */
+    --category-font-size: 1.25rem;
+    --category-right-position: -150px;
+    --category-top-position: 75vh;
+
+    /* Precio */
+    --price-size: 5rem;
+    --price-icon-font-size: 5rem;
+    --price-font-size: 1.75rem;
+
+    /* Contactos */
+    --contactos-gap: 0.5rem;
+    --contactos-num-font-size: 0.85rem;
+
+    /* Redes Sociales */
+    --rrss-gap: 0.5rem;
+    --rrss-pad: 0.5rem 0;
+
+    /* Ubicación */
+    --location-height: calc(100dvh - 23.25rem);
+
+    /* Trapecio */
+    --trapecio-display: block;
+    --triangle-width: 200px;
+
+    /* Navbar Buttons */
+    --navbar-display: grid;
+    --navbar-buttons-font-size: 1rem;
+    --navbar-buttons-bottom-position: 10vh;
+    --navbar-buttons-right-position: 1rem;
+
+    /* Footer */
+    --footer-pad: calc(var(--header-height) + 0.5rem) 1rem;
+    --footer-box-title-size: 1rem;
+    --footer-contactos-tel-size: 1rem;
+    --footer-created-by-font-size: 1.25rem;
+    --footer-created-by-pad: 0.5rem 0;
+}
+
+
+@font-face {
+    font-family: 'Sour Gummy';
+    src: url('../../fonts/SourGummy/SourGummy-Regular.woff2') format('woff2'), url('../../fonts/SourGummy/SourGummy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Sour Gummy';
+    src: url('../../fonts/SourGummy/SourGummy-SemiBold.woff2') format('woff2'), url('../../fonts/SourGummy/SourGummy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Sour Gummy';
+    src: url('../../fonts/SourGummy/SourGummy-Bold.woff2') format('woff2'), url('../../fonts/SourGummy/SourGummy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Pattaya;
+    src: url('../../fonts/Pattaya/Pattaya-Regular.woff2') format('woff2'), url('../../fonts/Pattaya/Pattaya-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: icomoon;
+    src: url('../../../../fonts/icomoon.woff2') format('woff2'), url('../../../../fonts/icomoon.woff') format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    max-width: 1980px;
+    margin: 0 auto;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-width: 200px;
+    min-height: 300px;
+    background-color: var(--body-background)
+}
+
+::-webkit-scrollbar {
+    display: none
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Sour Gummy", sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--titles-color)
+}
+
+a,
+textarea,
+button,
+input {
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--titles-color);
+}

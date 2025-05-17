@@ -1,0 +1,28 @@
+.polygon {
+    background-color: var(--body-background);
+    width: calc(50vw + var(--triangle-width));
+    height: 100vh;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    display: var(--trapecio-display);
+    pointer-events: none;
+    clip-path: polygon(var(--triangle-width) 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.polygon-shadow {
+    /* background-color: var(--body-background); */
+    width: calc(50vw);
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: fixed;
+    /* z-index: 1; */
+    z-index: 3;
+    display: var(--trapecio-display);
+    pointer-events: none;
+    background-image: linear-gradient(-78deg, #000 0%, #0005 5%, #0003 15%, #0000 20%);
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--triangle-width)) 100%, 0% 100%);
+    /* background: gray; */
+}

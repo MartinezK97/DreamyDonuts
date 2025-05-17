@@ -1,0 +1,81 @@
+#portada {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#portada,
+#portada a.cta,
+#portada h1 {
+    position: relative;
+}
+
+
+#portada a.cta,
+.category,
+.color-titles,
+.content-description .bg h1,
+.description .price i {
+    color: var(--titles-color)
+}
+
+#portada {
+    align-content: center;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: var(--secondary);
+    display: grid;
+    grid-gap: 1rem 0;
+    align-items: center;
+    z-index: 1
+}
+
+
+#portada h1 {
+    font-size: var(--hero-title-font-size);
+    padding: var(--hero-title-pad);
+    color: var(--secondary);
+    text-shadow: 0 0 10px #0009;
+    text-align: var(--hero-title-align-text);
+    width: var(--hero-title-width);
+    max-height: min-content;
+    margin: 0 0 1rem;
+    margin: var(--header-height) auto 0
+}
+
+#portada h1 span {
+    font-size: var(--hero-subtitle-font-size);
+}
+
+#portada a.cta {
+    background-color: var(--primary);
+    width: max-content;
+    max-width: 100%;
+    padding: var(--hero-cta-pad);
+    border-radius: 100px;
+    margin: 0 auto;
+    font-size: var(--hero-cta-font-size);
+    border: 1px solid
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    height: 100vh
+}
+
+.video-container:before {
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: #0009
+}
+
+.video-container video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2
+}
