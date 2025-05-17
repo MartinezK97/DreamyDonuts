@@ -103,7 +103,7 @@
 
 @keyframes showDescription {
     0% {
-        transform: translateX(-200px);
+        transform: translateX(calc(-1 * var(--triangle-width)));
     }
 
     50% {
@@ -111,8 +111,6 @@
     }
 
     100% {
-        transform: translateX(200px);
+        transform: translateX(var(--triangle-width));
     }
 }
-
-@keyframes showTitle {}

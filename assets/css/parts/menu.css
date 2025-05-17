@@ -9,14 +9,12 @@
     background-color: var(--titles-color);
     right: 0;
     transition: 0.4s ease;
-    width: clamp(200px, 90%, 300px);
+    width: clamp(200px, 90%, 200px);
     grid-auto-rows: min-content;
     place-items: center;
 }
 
-#menu a {
-    align-content: center
-}
+
 
 #menu a i,
 .contactos i,
@@ -34,14 +32,18 @@
     font-size: var(--icon-font-size);
     color: #fff;
     transform: translate(calc(-100% - var(--icon-right)), var(--icon-top));
-    border: none
+    border: none;
+    top: 0;
+    left: -0.25rem;
 }
 
 #menu a {
     grid-template-columns: 1.25rem auto;
     grid-gap: .5rem;
     align-items: center;
-    font-size: 1.35rem
+    font-size: 1.35rem;
+    display: block;
+    width: 100%;
 }
 
 #menu a i {

@@ -7,8 +7,8 @@
     --titles-color: #5b3813;
 
     /* Header */
-    --header-height: 5rem;
-    --header-brandname-font-size: 3rem;
+    --header-height: 5vh;
+    --header-brandname-font-size: clamp(2rem, 3vh, 3rem);
     --header-logo-size: 3rem;
     --header-navbar-display: grid;
 
