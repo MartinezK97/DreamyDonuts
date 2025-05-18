@@ -5,11 +5,12 @@
     z-index: 3;
     width: var(--navbar-size);
     margin: auto auto;
-    left: calc((50vw - var(--size)) / 3);
+    left: var(--navbar-left-position);
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0;
     padding: var(--navbar-gap);
     transition: 0.3s ease;
+
 }
 
 

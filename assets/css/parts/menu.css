@@ -3,7 +3,7 @@
     top: 0;
     grid-gap: 1rem;
     padding: 1rem;
-    display: grid;
+    display: var(--menu-display);
     z-index: 9999999999999999;
     height: 100vh;
     background-color: var(--titles-color);
@@ -34,7 +34,10 @@
     transform: translate(calc(-100% - var(--icon-right)), var(--icon-top));
     border: none;
     top: 0;
-    left: -0.25rem;
+    left: 0;
+    border: solid 1px red;
+    height: var(--header-height);
+    width: var(--header-height);
 }
 
 #menu a {
